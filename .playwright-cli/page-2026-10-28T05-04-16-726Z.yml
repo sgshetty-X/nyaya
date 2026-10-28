@@ -1,0 +1,221 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e8]: "National Legal Aid Helpline:"
+        - link "15100 (24x7 Toll-Free)" [ref=e9] [cursor=pointer]:
+          - /url: tel:15100
+        - generic [ref=e10]: "|"
+        - generic [ref=e11]: "Cyber Fraud:"
+        - link "1930" [ref=e12] [cursor=pointer]:
+          - /url: tel:1930
+      - generic [ref=e13]:
+        - generic [ref=e14]: Informational Legal Tech Platform (India)
+        - generic [ref=e15]: •
+        - generic [ref=e16]: DPDP Act Compliant
+    - generic [ref=e18]:
+      - button "Nyaya Home" [active] [ref=e20]:
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - text: न्याय
+            - generic [ref=e28]: Nyaya
+          - generic [ref=e29]: Legal Case Intelligence
+      - generic [ref=e39]:
+        - button "Saved Cases (4)" [ref=e40]
+        - button [ref=e972]
+        - button [ref=e973]
+        - button "Settings and Privacy" [ref=e58]
+  - main [ref=e62]:
+    - generic [ref=e974]:
+      - generic [ref=e975]:
+        - generic [ref=e976]: Indian Legal Intelligence & Drafting Platform
+        - heading "How can we help you today?" [level=1] [ref=e981]
+        - paragraph [ref=e982]: Understand your legal situation or review the documents you already have.
+      - generic [ref=e983]:
+        - button "Primary Action A Know Your Case Explain what happened, understand the law, and prepare a legal document. Plain-English incident description without legal jargon BNS 2023 vs IPC 1860 statutory applicability analysis Adaptive 20-question fact-clarification engine Generate police complaint, legal notice, or consumer plaint Start Case Intake" [ref=e984] [cursor=pointer]:
+          - generic [ref=e986]:
+            - generic [ref=e990]:
+              - text: Primary Action A
+              - heading "Know Your Case" [level=2] [ref=e991]
+              - paragraph [ref=e992]: Explain what happened, understand the law, and prepare a legal document.
+            - list [ref=e993]:
+              - listitem [ref=e994]: Plain-English incident description without legal jargon
+              - listitem [ref=e996]: BNS 2023 vs IPC 1860 statutory applicability analysis
+              - listitem [ref=e998]: Adaptive 20-question fact-clarification engine
+              - listitem [ref=e1000]: Generate police complaint, legal notice, or consumer plaint
+          - generic [ref=e1002]: Start Case Intake
+        - button "Primary Action B Manage Your Case Review your documents, find inconsistencies, and organise your evidence. Secure PDF, DOCX, image, and scan text extraction with SHA-256 Detect conflicting dates, amounts, and contradictory statements Consolidated event chronology & statutory limitation checks Missing evidence inventory & preservation checklist Open Case Workspace" [ref=e1006] [cursor=pointer]:
+          - generic [ref=e1008]:
+            - generic [ref=e1012]:
+              - text: Primary Action B
+              - heading "Manage Your Case" [level=2] [ref=e1013]
+              - paragraph [ref=e1014]: Review your documents, find inconsistencies, and organise your evidence.
+            - list [ref=e1015]:
+              - listitem [ref=e1016]: Secure PDF, DOCX, image, and scan text extraction with SHA-256
+              - listitem [ref=e1018]: Detect conflicting dates, amounts, and contradictory statements
+              - listitem [ref=e1020]: Consolidated event chronology & statutory limitation checks
+              - listitem [ref=e1022]: Missing evidence inventory & preservation checklist
+          - generic [ref=e1024]: Open Case Workspace
+      - generic [ref=e1028]:
+        - generic [ref=e1033]:
+          - heading "Need Immediate Government Legal Aid?" [level=4] [ref=e1034]
+          - paragraph [ref=e1035]: National Legal Services Authority provides free advocate appointment under Section 12 of LSA Act 1987.
+        - generic [ref=e1036]:
+          - link "Dial 15100" [ref=e1037] [cursor=pointer]:
+            - /url: tel:15100
+          - button "View Directory" [ref=e1039]
+      - generic [ref=e1040]:
+        - generic [ref=e1041]:
+          - heading "Recent Cases & Workspaces" [level=3] [ref=e1042]
+          - button "View All (4)" [ref=e1043]
+        - generic [ref=e1047]:
+          - generic [ref=e1048]:
+            - generic [ref=e1049]:
+              - generic [ref=e1050]:
+                - generic [ref=e1051]: consumer
+                - generic [ref=e1052]: 2 Sept
+              - heading "Defective Laptop & Warranty Service Denial by E-Commerce Platform" [level=4] [ref=e1056]
+              - paragraph [ref=e1057]: Purchased a high-performance developer laptop for ₹84,999 on 14 August 2024 from an online retailer. Within two weeks, the motherboard suffered total power failure. Retailer and authorized service center refused replacement claiming physical damage without inspection report, and refused refund.
+            - generic [ref=e1058]:
+              - generic [ref=e1059]:
+                - generic [ref=e1060]: 1 docs
+                - generic [ref=e1061]: •
+                - generic [ref=e1062]: Assessed
+              - generic [ref=e1063]:
+                - button "Intake" [ref=e1064]
+                - button "Workspace" [ref=e1065]
+          - generic [ref=e1066]:
+            - generic [ref=e1067]:
+              - generic [ref=e1068]:
+                - generic [ref=e1069]: tenancy
+                - generic [ref=e1070]: 5 Aug
+              - heading "Arbitrary Withholding of ₹1,20,000 Tenancy Security Deposit" [level=4] [ref=e1074]
+              - paragraph [ref=e1075]: Vacated rented apartment in Koramangala, Bengaluru on 31 July 2024 after giving contractual 1-month written notice via email. Landlord acknowledged handover and took back keys, but refuses to refund security deposit of ₹1,20,000 citing baseless repaint charges of ₹95,000.
+            - generic [ref=e1076]:
+              - generic [ref=e1077]:
+                - generic [ref=e1078]: 0 docs
+                - generic [ref=e1079]: •
+                - generic [ref=e1080]: Assessed
+              - generic [ref=e1081]:
+                - button "Intake" [ref=e1082]
+                - button "Workspace" [ref=e1083]
+          - generic [ref=e1084]:
+            - generic [ref=e1085]:
+              - generic [ref=e1086]:
+                - generic [ref=e1087]: contractual
+                - generic [ref=e1088]: 20 Sept
+              - heading "Breach of Commercial Contract & Conflicting Delivery Records" [level=4] [ref=e1092]
+              - paragraph [ref=e1093]: Provided UI/UX and software consulting services to a tech startup in Mumbai. Invoiced ₹3,40,000 upon milestone completion. Client acknowledged receipt but now claims in WhatsApp that delivery occurred late on 15 September instead of 01 September 2024, and refuses to pay the pending invoice.
+            - generic [ref=e1094]:
+              - generic [ref=e1095]:
+                - generic [ref=e1096]: 0 docs
+                - generic [ref=e1097]: •
+                - generic [ref=e1098]: Assessed
+              - generic [ref=e1099]:
+                - button "Intake" [ref=e1100]
+                - button "Workspace" [ref=e1101]
+          - generic [ref=e1102]:
+            - generic [ref=e1103]:
+              - generic [ref=e1104]:
+                - generic [ref=e1105]: cybercrime
+                - generic [ref=e1106]: 11 Jul
+              - heading "Cyber Financial Fraud & UPI Impersonation Scam" [level=4] [ref=e1110]
+              - paragraph [ref=e1111]: Received a fraudulent call from an individual impersonating a courier executive regarding an urgent parcel delivery. Tricked into clicking a malicious screen-sharing link and entering UPI PIN, leading to unauthorized debit of ₹65,000 on 10 July 2024.
+            - generic [ref=e1112]:
+              - generic [ref=e1113]:
+                - generic [ref=e1114]: 0 docs
+                - generic [ref=e1115]: •
+                - generic [ref=e1116]: Assessed
+              - generic [ref=e1117]:
+                - button "Intake" [ref=e1118]
+                - button "Workspace" [ref=e1119]
+      - generic [ref=e1120]:
+        - generic [ref=e1121]:
+          - heading "Explore Pre-Seeded Indian Legal Scenarios (Synthetic Data) Demo Ready" [level=4] [ref=e1122]:
+            - generic [ref=e1123]: Explore Pre-Seeded Indian Legal Scenarios (Synthetic Data)
+            - generic [ref=e1124]: Demo Ready
+          - paragraph [ref=e1125]: Load sample cases with complete pre-filled documents, timelines, contradiction findings, and statutory citations.
+        - generic [ref=e1126]:
+          - button "Consumer Dispute Defective Laptop & Warranty CPA 2019 • ₹84,999 • Bengaluru" [ref=e1127] [cursor=pointer]:
+            - generic [ref=e1128]: Consumer Dispute
+            - generic [ref=e1129]: Defective Laptop & Warranty
+            - generic [ref=e1130]: CPA 2019 • ₹84,999 • Bengaluru
+          - button "Tenancy Deposit ₹1,20,000 Deposit Withheld TPA Sec 108 • Koramangala" [ref=e1131] [cursor=pointer]:
+            - generic [ref=e1132]: Tenancy Deposit
+            - generic [ref=e1133]: ₹1,20,000 Deposit Withheld
+            - generic [ref=e1134]: TPA Sec 108 • Koramangala
+          - button "Contract & Dispute Unpaid Invoice & Delivery Conflict Contradiction Finding • Mumbai" [ref=e1135] [cursor=pointer]:
+            - generic [ref=e1136]: Contract & Dispute
+            - generic [ref=e1137]: Unpaid Invoice & Delivery Conflict
+            - generic [ref=e1138]: Contradiction Finding • Mumbai
+          - button "Cyber Crime & BNS UPI Impersonation Fraud BNS 318(4) • IT Act • New Delhi" [ref=e1139] [cursor=pointer]:
+            - generic [ref=e1140]: Cyber Crime & BNS
+            - generic [ref=e1141]: UPI Impersonation Fraud
+            - generic [ref=e1142]: BNS 318(4) • IT Act • New Delhi
+  - contentinfo [ref=e232]:
+    - generic [ref=e237]:
+      - paragraph [ref=e238]: Legal Assistance & Non-Advocate Disclaimer
+      - paragraph [ref=e239]: Nyaya is an automated legal case preparation, factual structuring, and evidence management technology platform. Nyaya does not provide formal legal advice, legal opinions, or court representation. No advocate-client privilege or fiduciary relationship is created by using this service. The laws of India, including the Bharatiya Nyaya Sanhita (BNS 2023), Bharatiya Nagarik Suraksha Sanhita (BNSS 2023), and relevant civil procedural codes, require human advocate scrutiny for court filings. If you are experiencing immediate danger or domestic violence, call emergency helpline 112 or Women Helpline 181 immediately.
+    - generic [ref=e240]:
+      - generic [ref=e241]:
+        - generic [ref=e242]:
+          - generic [ref=e243]: न्याय Nyaya Platform
+          - paragraph [ref=e245]: Empowering citizens across India with structured legal fact-finding, evidence verification, and official legal aid resources.
+          - generic [ref=e246]: DPDP Act, 2023 Compliant
+        - generic [ref=e251]:
+          - paragraph [ref=e252]: Primary Portals
+          - list [ref=e253]:
+            - listitem [ref=e254]:
+              - link "Know Your Case Intake" [ref=e255] [cursor=pointer]:
+                - /url: "#know-your-case"
+            - listitem [ref=e256]:
+              - link "Manage Your Case Workspace" [ref=e257] [cursor=pointer]:
+                - /url: "#manage-your-case"
+            - listitem [ref=e258]:
+              - link "Indian Statutes & BNS/IPC Transition" [ref=e259] [cursor=pointer]:
+                - /url: "#law-library"
+            - listitem [ref=e260]:
+              - link "NALSA / SLSA Directory" [ref=e261] [cursor=pointer]:
+                - /url: "#legal-aid"
+        - generic [ref=e262]:
+          - paragraph [ref=e263]: Emergency & Help
+          - list [ref=e264]:
+            - listitem [ref=e265]:
+              - generic [ref=e268]:
+                - text: "NALSA Legal Aid:"
+                - strong [ref=e269]: "15100"
+            - listitem [ref=e270]:
+              - generic [ref=e273]:
+                - text: "Cyber Crime:"
+                - strong [ref=e274]: "1930"
+            - listitem [ref=e275]:
+              - generic [ref=e278]:
+                - text: "Police Emergency:"
+                - strong [ref=e279]: "112"
+            - listitem [ref=e280]:
+              - generic [ref=e283]:
+                - text: "Women in Distress:"
+                - strong [ref=e284]: "181"
+        - generic [ref=e285]:
+          - paragraph [ref=e286]: Official Indian Portals
+          - list [ref=e287]:
+            - listitem [ref=e288]:
+              - link "India Code (Govt. of India)" [ref=e289] [cursor=pointer]:
+                - /url: https://www.indiacode.nic.in
+            - listitem [ref=e295]:
+              - link "eCourts Services Portal" [ref=e296] [cursor=pointer]:
+                - /url: https://ecourts.gov.in
+            - listitem [ref=e302]:
+              - link "NALSA Official Portal" [ref=e303] [cursor=pointer]:
+                - /url: https://nalsa.gov.in
+            - listitem [ref=e309]:
+              - link "National Cyber Crime Portal" [ref=e310] [cursor=pointer]:
+                - /url: https://cybercrime.gov.in
+      - generic [ref=e316]:
+        - paragraph [ref=e317]: © 2026 Nyaya — Dedicated to accessible legal intelligence in India.
+        - generic [ref=e318]:
+          - generic [ref=e319]: Privacy Policy
+          - generic [ref=e320]: •
+          - generic [ref=e321]: Terms of Service
+          - generic [ref=e322]: •
+          - generic [ref=e323]: Security Standards

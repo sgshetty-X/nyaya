@@ -1,0 +1,1854 @@
+
+# MASTER BUILD PROMPT
+# NYAYA — AI-POWERED LEGAL AID AND CASE PREPARATION PLATFORM FOR INDIA
+
+## 1. YOUR ROLE AND PRIMARY OBJECTIVE
+
+Act simultaneously as a principal software architect, senior full-stack engineer, AI/ML engineer, legal technology researcher, database architect, security engineer, product designer, UX researcher, accessibility specialist, QA engineer, and DevOps engineer.
+
+Build a complete, integrated, functional, secure, responsive web application named "Nyaya" for legal assistance and case preparation in India.
+
+This is a ONE-SHOT BUILD REQUIREMENT.
+
+Do not respond with only a plan, roadmap, wireframe, design concept, architecture document, static HTML prototype, or list of suggested technologies. Create the actual working application, implement the frontend and backend, connect the database and file storage, implement the core AI workflows, create database migrations and seed data, configure environment variables, write tests, run the available validation commands, fix errors, and provide the completed project.
+
+Do not divide the delivery into future development phases. Implement all requirements in this specification as one integrated application. If a genuinely external dependency requires credentials, implement its complete integration interface and graceful setup state, document the exact missing configuration, and continue building the remaining functionality.
+
+Do not ask me to approve individual design decisions. Make sensible, secure, technically sound decisions independently.
+
+Never claim a feature works unless it has been implemented and tested to the extent possible in the current environment.
+
+## 2. PRODUCT VISION
+
+Nyaya is an AI-powered legal case preparation and evidence analysis platform designed primarily for people seeking legal assistance in India.
+
+The product helps users:
+
+1. Understand their legal situation.
+2. Identify potentially relevant laws and legal provisions.
+3. Clarify facts through intelligent questioning.
+4. Identify vague, incomplete, contradictory, or unsupported statements.
+5. Organise parties, witnesses, evidence, and events.
+6. Prepare structured legal documents.
+7. Review existing legal documents and case records.
+8. Detect inconsistencies and potential evidence gaps.
+9. Check potentially applicable procedural and legal requirements.
+10. Locate appropriate official legal aid resources.
+
+The product must use simple English, minimal text, a premium Google-inspired interface, and a highly intuitive workflow.
+
+The primary navigation must prominently feature exactly two main functional entry points:
+
+A. KNOW YOUR CASE
+B. MANAGE YOUR CASE
+
+Other functionality, such as saved cases, settings, legal aid resources, and account management, should be accessible through secondary navigation.
+
+The platform must not misrepresent itself as a lawyer, court, government authority, or official legal advice service.
+
+## 3. MANDATORY TECHNOLOGY STACK
+
+Use the following stack unless the execution environment makes a specific component genuinely unavailable.
+
+Frontend:
+- Next.js with App Router.
+- React.
+- TypeScript in strict mode.
+- Tailwind CSS.
+- Accessible reusable UI components, preferably shadcn/ui where compatible.
+- Lucide icons.
+- Zod for validation.
+- React Hook Form for complex forms when useful.
+- Server Components by default and Client Components only when interactivity requires them.
+
+Backend:
+- Next.js server-side route handlers and server actions where appropriate.
+- A clear service layer separating HTTP handlers, domain logic, data access, AI orchestration, and external integrations.
+- PostgreSQL as the relational database.
+- Supabase for PostgreSQL, authentication, and private file storage, unless an equivalent service is already configured and demonstrably more appropriate.
+- Supabase Row Level Security for case-level isolation.
+- Database migrations committed to the project.
+- Background processing abstraction for large uploads, OCR, and lengthy document analysis.
+
+AI:
+- A provider-independent server-side AI service.
+- Support a configurable LLM provider through environment variables.
+- Use structured JSON output and schema validation for legal analysis.
+- Use retrieval-augmented generation (RAG) over verified legal sources.
+- Keep model calls on the server.
+- Do not hardcode provider credentials.
+- Never assume that an API key is available.
+- Implement an explicit configuration status and helpful error states when credentials are missing.
+
+Documents:
+- PDF text extraction.
+- DOCX extraction.
+- OCR for scanned PDFs and images.
+- DOCX generation.
+- PDF export.
+- Secure file validation and resource limits.
+
+Testing:
+- Unit tests.
+- Integration tests.
+- End-to-end tests using Playwright or an equivalent tool.
+- Type checking and production build validation.
+
+Deployment:
+- Provide a reproducible local setup.
+- Include .env.example.
+- Include database migrations and seed scripts.
+- Include clear deployment instructions for the selected infrastructure.
+
+Do not introduce unnecessary microservices. Prefer a well-structured modular monolith with independently testable services.
+
+If the supplied environment uses another framework or provides an existing repository, inspect it first and preserve useful existing work. Do not overwrite a functioning project blindly.
+
+## 4. STRICT GOOGLE SANS TYPOGRAPHY REQUIREMENT
+
+The entire user interface must use the exact Google Sans font family requested here:
+
+https://fonts.google.com/specimen/Google+Sans
+
+This is a strict product requirement, not a preference.
+
+Do not silently substitute Roboto, Arial, Inter, system fonts, or another typeface.
+
+Before implementation, inspect the available official font delivery method and the applicable usage and redistribution terms. Use an approved source or authorised font assets. Do not scrape or redistribute font files unlawfully.
+
+Create a central typography configuration with a single authoritative font family. Apply it to:
+- Body text.
+- Headings.
+- Navigation.
+- Buttons.
+- Forms.
+- Dialogs.
+- Dropdowns.
+- Tooltips.
+- Tables.
+- Notifications.
+- Case analysis panels.
+- Document preview UI.
+- Loading states.
+- Empty states.
+- Error messages.
+
+If Google Sans cannot legally or technically be loaded in the environment, clearly report that dependency. Do not claim that the exact font is active when it is not.
+
+Verify the actual loaded font in the browser during testing.
+
+Use a consistent type scale:
+- Main page heading: approximately 30–36 px on desktop.
+- Section heading: approximately 20–24 px.
+- Card heading: approximately 16–18 px.
+- Body text: approximately 14–16 px.
+- Supporting text: approximately 12–14 px.
+- Legal document previews: readable, print-appropriate typography.
+
+Maintain clear line height, restrained weights, readable paragraph widths, and strong visual hierarchy.
+
+## 5. VISUAL DESIGN SYSTEM
+
+Create a premium, minimalist, trustworthy, modern legal technology interface inspired by Google's product design principles.
+
+Do not copy another company's interface exactly.
+
+Colour palette:
+- Primary background: white or a very light neutral.
+- Secondary background: pale grey.
+- Main text: near-black or charcoal.
+- Primary action: restrained Google-inspired blue.
+- Success: accessible green.
+- Warning: accessible amber.
+- Critical issue: accessible red.
+- Borders: subtle neutral grey.
+- Secondary text: muted grey with accessible contrast.
+
+Avoid:
+- Excessive gradients.
+- Neon colours.
+- Glassmorphism everywhere.
+- Huge decorative illustrations.
+- Excessive shadows.
+- Unnecessary animations.
+- Dense legal text on the landing screen.
+- Excessive cards inside cards.
+- Cluttered dashboards.
+- Fake charts and meaningless metrics.
+- Artificial AI chat interfaces when a structured workflow is more useful.
+
+Use:
+- Generous whitespace.
+- Consistent spacing tokens.
+- Clear headings.
+- Simple line icons.
+- Restrained rounded corners.
+- Strong alignment.
+- Meaningful visual grouping.
+- Clear primary and secondary buttons.
+- Subtle, purposeful animation.
+- Responsive layouts.
+- Skeleton loading states.
+- Useful empty states.
+- Inline validation.
+- Clear confirmation dialogs for destructive actions.
+
+Create reusable design tokens for colour, typography, spacing, radii, shadows, motion, and breakpoints.
+
+Respect prefers-reduced-motion.
+
+Ensure WCAG 2.2 AA accessibility as a target, including keyboard navigation, visible focus, appropriate contrast, semantic headings, screen reader labels, accessible forms, and meaningful status announcements.
+
+Support desktop, tablet, and mobile without horizontal overflow.
+
+## 6. APPLICATION INFORMATION ARCHITECTURE
+
+Build these screens and routes.
+
+Public:
+- Landing page.
+- Sign in.
+- Sign up.
+- Privacy policy.
+- Terms of use.
+- Legal assistance disclaimer.
+- Legal aid resources.
+
+Authenticated:
+- Dashboard.
+- Know Your Case.
+- Incident intake.
+- Initial legal assessment.
+- Clarification questionnaire.
+- Case analysis results.
+- Document type selection.
+- Legal document editor.
+- Manage Your Case.
+- Case document upload.
+- Document processing status.
+- Document intelligence report.
+- Evidence register.
+- Case chronology.
+- Parties and witnesses.
+- Saved cases.
+- Case history and versions.
+- Export centre.
+- Profile and account settings.
+- Privacy and data management.
+- Help and feedback.
+
+Use consistent navigation, breadcrumbs where useful, and contextual back navigation.
+
+Do not require users to understand legal terminology to navigate the product.
+
+## 7. LANDING PAGE AND DASHBOARD
+
+The first authenticated dashboard must show the two primary options prominently.
+
+Page heading:
+"How can we help you today?"
+
+Supporting text:
+"Understand your legal situation or review the documents you already have."
+
+Primary card:
+"Know Your Case"
+
+Description:
+"Explain what happened, understand the law, and prepare a legal document."
+
+Secondary card:
+"Manage Your Case"
+
+Description:
+"Review your documents, find inconsistencies, and organise your evidence."
+
+Additional dashboard sections:
+- Recent cases.
+- Continue where you left off.
+- Pending questions.
+- Recently uploaded documents.
+- Drafts requiring review.
+- Important dates, when verified.
+- Access to legal aid resources.
+
+Only display real data. Do not invent case counts, processing results, deadlines, or user activity.
+
+Provide useful empty states for new users.
+
+## 8. FEATURE ONE: KNOW YOUR CASE
+
+Implement the complete end-to-end case preparation workflow.
+
+### 8.1 Incident intake
+
+Create a clean incident description interface.
+
+Required input:
+- User's description of the incident or dispute.
+
+Additional contextual fields:
+- State or Union Territory.
+- Relevant incident date or date range, if known.
+- Location or jurisdiction, if known.
+- Main parties and their roles, if known.
+- Desired outcome.
+- Type of document desired, when known.
+- Existing proceedings, if any.
+- Optional supporting file uploads.
+
+Allow the user to describe the situation in ordinary language without knowing legal terminology.
+
+Do not force users to complete every field upfront.
+
+Use progressive disclosure: ask for information when it becomes relevant.
+
+Provide a privacy reminder before users upload highly sensitive records.
+
+Validate the input, preserve the original account of events, and create a persistent case record.
+
+### 8.2 Case classification
+
+Classify the matter into one or more candidate categories:
+- Criminal.
+- Civil.
+- Family.
+- Property.
+- Employment.
+- Consumer.
+- Contractual.
+- Tenancy.
+- Cybercrime.
+- Constitutional or public law.
+- Administrative.
+- Other or uncertain.
+
+This classification must be provisional and revisable.
+
+Do not force every matter into a single category.
+
+Detect when a matter may involve multiple legal domains.
+
+### 8.3 Urgency and jurisdiction
+
+Before a long questionnaire, check for indicators of:
+- Immediate danger.
+- Urgent protection needs.
+- Imminent legal deadlines.
+- Arrest or detention concerns.
+- Existing court proceedings.
+- Expiring limitation periods.
+- Time-sensitive notices or orders.
+
+Where appropriate, display relevant emergency resources, official authorities, or legal aid referral options.
+
+Never delay urgent guidance until all 20 questions are answered.
+
+Ask about the state, relevant location, forum, and incident dates when they materially affect the law.
+
+### 8.4 Legal research and provision identification
+
+Implement a dedicated legal research service.
+
+For each matter:
+1. Extract relevant facts.
+2. Identify candidate legal issues.
+3. Identify potentially applicable statutes and provisions.
+4. Retrieve authoritative source material.
+5. Check commencement and amendment status.
+6. Compare statutory requirements with the reported facts.
+7. Identify missing legal elements.
+8. Consider alternative provisions.
+9. Generate source-linked explanations.
+10. Record uncertainty.
+
+Do not use keyword matching as the sole basis for a legal conclusion.
+
+Do not let the language model invent section numbers, legal requirements, judgments, citations, limitation periods, or court procedures.
+
+Each provision must have a source record containing:
+- Official law title.
+- Provision identifier.
+- Official source URL.
+- Source text or relevant extracted passage.
+- Jurisdiction.
+- Effective date or applicable date range, when established.
+- Amendment status, when verified.
+- Retrieval timestamp.
+- Source verification status.
+
+Display the legal provision alongside:
+- Plain-English explanation.
+- Legal requirements or ingredients.
+- Facts that may support its application.
+- Facts still missing.
+- Potentially conflicting facts.
+- Relevant evidence.
+- Alternative legal interpretations.
+- Questions that could change the assessment.
+- Verification status and source links.
+
+Use these applicability states:
+- Potentially applicable.
+- Requires clarification.
+- Insufficient facts.
+- Not presently supported.
+- Requires professional review.
+- Verified statutory text, but application unresolved.
+
+Do not equate verified statutory text with a verified legal conclusion.
+
+### 8.5 Indian legal framework
+
+Support relevant Indian central and state legislation.
+
+At minimum, account for:
+- Constitution of India.
+- Bharatiya Nyaya Sanhita, 2023.
+- Bharatiya Nagarik Suraksha Sanhita, 2023.
+- Bharatiya Sakshya Adhiniyam, 2023.
+- Indian Penal Code, 1860, where legally relevant to earlier events or applicable transitional questions.
+- Code of Criminal Procedure, 1973, where relevant to the applicable period and transitional provisions.
+- Indian Evidence Act, 1872, where relevant to the applicable period and transitional provisions.
+- Code of Civil Procedure, 1908.
+- Limitation Act, 1963.
+- Contract Act, 1872.
+- Specific Relief Act, 1963.
+- Transfer of Property Act, 1882.
+- Applicable family law statutes.
+- Applicable employment and labour laws.
+- Consumer Protection Act, 2019.
+- Information Technology Act, 2000.
+- Protection of Women from Domestic Violence Act, 2005.
+- Relevant state legislation, rules, notifications, court rules, and procedural requirements.
+
+This is an initial coverage list, not a declaration that every listed Act applies to every case.
+
+Verify the legal status of every statute and provision through authoritative sources.
+
+The new criminal law framework generally commenced on 1 July 2024, subject to notified exceptions and applicable transitional provisions. Do not apply a simplistic date-based substitution rule.
+
+Account for:
+- Date of the alleged conduct.
+- Date of commencement of the relevant law.
+- Transitional provisions.
+- Savings clauses.
+- Procedural stage.
+- Applicable territorial jurisdiction.
+- Relevant amendments.
+- Relevant judicial interpretation.
+
+Use official sources such as India Code, the Gazette of India, official Supreme Court and High Court websites, and government department publications.
+
+Never represent a search result snippet or unverified third-party article as authoritative statutory text.
+
+If authoritative sources cannot be retrieved, disclose the limitation and mark the legal conclusion as unverified.
+
+### 8.6 Vague statement and factual gap detection
+
+Detect:
+- Missing dates.
+- Ambiguous time references.
+- Unidentified people.
+- Unclear relationships.
+- Unspecified amounts.
+- Missing locations.
+- Unsupported allegations.
+- Conclusions presented as facts.
+- Unclear event sequences.
+- Missing communication details.
+- Unclear ownership or possession.
+- Conflicting accounts.
+- Unclear harm or loss.
+- Missing requested relief.
+- Unclear procedural history.
+
+For each issue, store:
+- Issue identifier.
+- Original statement.
+- Category.
+- Why clarification may matter.
+- Legal or evidentiary relevance.
+- Severity.
+- Related questions.
+- Source location.
+- Resolution status.
+
+Do not automatically label a vague statement as false.
+
+### 8.7 Adaptive 20-question clarification engine
+
+The platform must support up to 20 targeted clarification questions for the selected matter.
+
+Generate questions from the actual missing facts and legal elements, not from a fixed generic questionnaire.
+
+Each question must have:
+- Stable question ID.
+- Plain-English wording.
+- Short explanation of why it matters.
+- Input type.
+- Optional structured fields.
+- Relevant issue IDs.
+- Relevant candidate legal provisions.
+- Evidence references, when applicable.
+- Required or optional status.
+- Validation rules.
+- Answer status.
+- Answer history.
+
+Supported answers:
+- Text.
+- Date.
+- Approximate date.
+- Number or amount.
+- Yes.
+- No.
+- I do not know.
+- Not applicable.
+- Not sure.
+- Supporting file upload, where appropriate.
+
+Allow the user to revise answers.
+
+Preserve previous answers and revisions in the case audit history.
+
+Questions must be grouped into meaningful sections:
+1. Parties and relationships.
+2. Events and chronology.
+3. Conduct and communications.
+4. Harm, loss, and impact.
+5. Evidence and witnesses.
+6. Existing legal proceedings.
+7. Jurisdiction and applicable dates.
+8. Desired relief or outcome.
+
+Use adaptive follow-up questions when an answer reveals a material gap.
+
+Maintain a maximum of 20 primary clarification questions unless the user explicitly requests further questioning. If more information is essential, explain the gap and ask permission to continue.
+
+Do not force irrelevant questions to reach a quota.
+
+When the user says "I don't know", record an unknown value, not a factual inference.
+
+When the user says "Not applicable", record that status explicitly.
+
+Do not interpret silence as consent, admission, or proof.
+
+Provide a progress indicator, save progress automatically, and allow the user to return later.
+
+### 8.8 Final reassessment
+
+After the user answers:
+- Rebuild the structured factual model.
+- Re-evaluate candidate legal provisions.
+- Identify unresolved questions.
+- Recheck material dates.
+- Recheck jurisdiction.
+- Reassess possible contradictions.
+- Update the evidence register.
+- Update the chronology.
+- Reassess the intended remedy.
+- Retrieve relevant legal sources again where necessary.
+
+Compare the initial and updated legal assessments.
+
+Explain what changed and why.
+
+Do not hide remaining uncertainty.
+
+### 8.9 Structured final case report
+
+Generate these sections:
+1. Plain-English case summary.
+2. Nature of the dispute.
+3. Parties and roles.
+4. Facts reported by the user.
+5. Facts supported by uploaded documents.
+6. Facts independently verified, if any.
+7. Disputed or unverified facts.
+8. Chronology of events.
+9. Potentially applicable provisions.
+10. Legal requirements and fact-to-law mapping.
+11. Missing legal elements.
+12. Available evidence.
+13. Potentially useful missing evidence.
+14. Witness register.
+15. Procedural history.
+16. Jurisdiction considerations.
+17. Potential deadlines requiring verification.
+18. Desired remedy.
+19. Remaining uncertainties.
+20. Recommended next steps.
+
+Each important claim must be traceable to its source.
+
+### 8.10 Legal document selection
+
+Allow the user to select the appropriate output:
+- Police complaint.
+- Representation to a public authority.
+- Consumer complaint.
+- Legal notice.
+- Reply to a legal notice.
+- Civil plaint draft.
+- Written statement draft.
+- Petition.
+- Writ petition draft.
+- Private complaint draft.
+- Application.
+- Affidavit draft.
+- Formal grievance.
+- Other supported document type.
+
+Do not treat these as interchangeable.
+
+Before generating a formal document, establish:
+- Intended recipient or forum.
+- Nature of the proceeding.
+- Parties and their roles.
+- Jurisdiction.
+- Relief requested.
+- Relevant facts and dates.
+- Applicable procedural requirements.
+- Whether annexures or affidavits may be required.
+- Whether professional review is recommended.
+
+If the intended forum or procedural route is unclear, explain the uncertainty before selecting a template.
+
+### 8.11 Document drafting engine
+
+Use structured, versioned templates.
+
+Support:
+- Proper heading.
+- Recipient or court designation.
+- Party details.
+- Subject.
+- Introductory statement.
+- Numbered factual paragraphs.
+- Chronological sequence.
+- Legal grounds, where appropriate.
+- Relevant statutory provisions.
+- Evidence and annexure references.
+- Specific requested relief.
+- Closing.
+- Date and place fields.
+- Signature placeholders.
+- Verification or affidavit sections when applicable.
+
+Do not insert procedural sections that do not belong in the selected document type.
+
+Draft in clear, formal, factual language.
+
+Avoid unnecessary repetition, emotional exaggeration, unsupported allegations, invented quotations, and conclusory statements unsupported by the record.
+
+Preserve material details supplied by the user.
+
+Unknown or inapplicable answers must not appear as literal placeholders such as "I don't know", "N/A", or "not applicable" in the final narrative.
+
+Omit nonessential unknown information.
+
+If a material legal requirement cannot be established, do not silently omit it in a way that falsely suggests completeness. Display a separate unresolved-items checklist and use a neutral placeholder only when the document cannot responsibly be completed without the missing information.
+
+Never invent names, dates, addresses, amounts, evidence, events, admissions, witness testimony, legal authorities, or facts.
+
+Do not turn an allegation into an established fact.
+
+Do not create a false statement to make the document sound stronger.
+
+Allow users to inspect and edit the generated draft.
+
+### 8.12 Document editor and export
+
+Implement:
+- Rich-text or structured document editing.
+- Auto-save.
+- Version history.
+- Compare versions.
+- Preview.
+- Copy text.
+- Download DOCX.
+- Download PDF.
+- Print.
+- Edit party details.
+- Manage annexures.
+- Export a case summary separately.
+- Export a chronology and evidence register separately.
+
+Use print-appropriate layouts.
+
+Do not embed unsupported legal citations.
+
+Preserve numbered paragraphs and headings during export.
+
+Provide a final review checklist before download.
+
+## 9. FEATURE TWO: MANAGE YOUR CASE
+
+Implement a complete document ingestion and case intelligence workflow.
+
+### 9.1 Case workspace
+
+Allow users to:
+- Create a case.
+- Name the case.
+- Select a broad matter category.
+- Enter the relevant jurisdiction.
+- Add known parties.
+- Upload multiple documents.
+- Add documents later.
+- Associate documents with an existing case.
+- Remove a document subject to retention and audit rules.
+- View processing status.
+- Review findings.
+- Update facts and generate a revised analysis.
+
+Support case-level isolation.
+
+### 9.2 Upload formats
+
+Support, where technically feasible:
+- PDF.
+- DOCX.
+- TXT.
+- PNG.
+- JPEG.
+- Other explicitly enabled image formats.
+
+Validate actual file content, not only filename extensions or browser-provided MIME types.
+
+Enforce file size, page count, decompression, processing time, and resource limits.
+
+Reject unsupported or dangerous file types.
+
+Do not execute uploaded files or embedded scripts.
+
+Use malware scanning where available.
+
+Store files in private object storage.
+
+Use short-lived signed URLs for authorised access.
+
+Never expose storage credentials or unrestricted file URLs.
+
+### 9.3 Document processing pipeline
+
+Implement a processing pipeline:
+
+1. Validate the upload.
+2. Store the original file securely.
+3. Compute a cryptographic checksum.
+4. Detect file type.
+5. Extract document metadata.
+6. Extract text and layout.
+7. Perform OCR when required.
+8. Preserve page numbers and source positions.
+9. Detect document language.
+10. Segment the document into meaningful sections.
+11. Extract names, dates, amounts, events, references, and claims.
+12. Link extracted facts to page-level source locations.
+13. Index authorised content for retrieval.
+14. Analyse contradictions and gaps.
+15. Persist results.
+16. Display processing status and errors.
+
+Use background jobs for expensive processing.
+
+Implement retries with limits, idempotency, and failure recovery.
+
+Do not lose the original document when OCR or extraction fails.
+
+### 9.4 Document inventory
+
+For each file, show:
+- Filename.
+- File type.
+- Upload date.
+- Document date, if extracted.
+- Page count.
+- Processing status.
+- OCR status.
+- Extraction confidence.
+- Language.
+- Related parties.
+- Key dates.
+- Linked evidence items.
+- Associated findings.
+
+Allow the user to inspect extracted text alongside the original page.
+
+### 9.5 Contradiction detection
+
+Identify potential contradictions:
+- Within one document.
+- Across different documents.
+- Between a document and the user's account.
+- Between successive document versions.
+- Between a previously supplied answer and a later answer.
+
+Compare:
+- Dates.
+- Amounts.
+- Names.
+- Addresses.
+- Events.
+- Contract terms.
+- Payment records.
+- Ownership claims.
+- Relationships.
+- Descriptions of conduct.
+- Procedural history.
+
+Every contradiction finding must contain:
+- Finding ID.
+- Category.
+- Severity.
+- Statement A.
+- Statement B.
+- Document A and page reference.
+- Document B and page reference.
+- Exact source excerpts where appropriate.
+- Explanation of the discrepancy.
+- Confidence and limitations.
+- Recommended clarification.
+- User resolution status.
+
+Distinguish genuine contradictions from differences that may be explained by rounding, time zones, document versions, spelling variations, approximate dates, or different perspectives.
+
+Never automatically conclude fraud, perjury, dishonesty, or guilt from a discrepancy.
+
+### 9.6 Missing evidence analysis
+
+Identify potentially useful evidence based on the case issues and applicable legal requirements.
+
+Examples may include:
+- Agreements.
+- Receipts.
+- Bank statements.
+- Correspondence.
+- Photographs.
+- Medical records.
+- Witness details.
+- Official acknowledgements.
+- Notices.
+- Delivery proof.
+- Orders.
+- Relevant electronic records.
+
+These are examples only. Do not assume every item is necessary.
+
+For every suggestion, explain:
+- Which factual issue it relates to.
+- Why it might matter.
+- Which legal or procedural requirement may be involved.
+- Whether the requirement has been verified.
+- Whether alternative evidence may exist.
+- Whether the evidence appears missing from the uploaded set or is genuinely known not to exist.
+
+Do not claim evidence is absent from the real world merely because it was not uploaded.
+
+Do not advise users to fabricate, alter, destroy, improperly access, or unlawfully obtain evidence.
+
+Include preservation guidance when relevant.
+
+### 9.7 Timeline verification
+
+Extract dates and events from all uploaded records.
+
+Generate a consolidated chronology with:
+- Event.
+- Date or date range.
+- Date precision.
+- Source document.
+- Page number.
+- Extracted text.
+- Related parties.
+- Supporting evidence.
+- Conflicting evidence.
+- Confidence.
+- Resolution status.
+
+Detect:
+- Events appearing out of order.
+- References to future or past events that do not align.
+- Impossible sequences.
+- Unexplained gaps.
+- Conflicting dates.
+- Potentially relevant delays.
+- Dates requiring legal verification.
+
+Differentiate between event date, document creation date, document receipt date, filing date, and date of discovery.
+
+Do not infer an exact date from a vague phrase such as "last month".
+
+Do not treat an unexplained gap as proof that an event did not occur.
+
+### 9.8 Inconsistency detection
+
+Compare facts across the complete case record.
+
+Normalise entity references cautiously.
+
+Support aliases and alternative spellings without automatically merging distinct people.
+
+Distinguish:
+- Confirmed mismatch in extracted text.
+- Probable inconsistency.
+- Potential contradiction.
+- Missing information.
+- OCR uncertainty.
+- Unverified assertion.
+
+Allow the user to confirm, reject, or explain a finding.
+
+When a finding is resolved, preserve the original source and the resolution history.
+
+### 9.9 Legal and procedural deficiency checks
+
+Analyse documents against the applicable requirements for the specific document type, forum, jurisdiction, and procedural stage.
+
+Possible checks:
+- Missing required fields.
+- Incorrect or inconsistent party details.
+- Missing referenced annexures.
+- Unclear relief requested.
+- Missing signatures or verification fields.
+- Inconsistent amounts.
+- Unclear chronology.
+- Possible limitation concerns.
+- Jurisdiction questions.
+- Unverified statutory references.
+- Missing supporting records.
+- Potentially applicable procedural requirements.
+
+Separate:
+A. A requirement confirmed by an authoritative source.
+B. A possible requirement needing clarification.
+C. A recommended practice.
+D. An AI-generated observation requiring professional review.
+
+Do not invent mandatory requirements.
+
+Do not conclude that a filing is invalid without sufficient legal basis.
+
+### 9.10 Prioritised case readiness report
+
+Generate:
+- Executive summary.
+- Document inventory.
+- Material contradictions.
+- Potentially missing evidence.
+- Chronology issues.
+- Factual inconsistencies.
+- Legal issues.
+- Procedural checklist.
+- Important deadlines requiring verification.
+- Questions to resolve.
+- Recommended next actions.
+- Source references.
+- Limitations and confidence.
+
+Use meaningful severity categories:
+- Critical: possible immediate danger or a potentially imminent legal deadline.
+- High: a material issue that could affect the document or case.
+- Medium: an important unresolved inconsistency or gap.
+- Low: a minor discrepancy or improvement.
+
+Do not use severity labels to exaggerate the importance of uncertain findings.
+
+Do not produce a fabricated probability of winning.
+
+## 10. SHARED CASE INTELLIGENCE
+
+Both features must operate on a shared case model.
+
+Create a canonical structured representation of:
+- Case.
+- Matter category.
+- Parties.
+- Events.
+- Allegations.
+- Reported facts.
+- Document-supported facts.
+- Independently verified facts.
+- Disputed facts.
+- Unknown facts.
+- Legal issues.
+- Statutory provisions.
+- Questions.
+- Answers.
+- Evidence items.
+- Documents.
+- Contradictions.
+- Witnesses.
+- Remedies.
+- Deadlines.
+- Findings.
+- Drafts.
+- Versions.
+- Review actions.
+
+Maintain provenance for every material fact.
+
+Represent where a fact came from:
+- User input.
+- Questionnaire answer.
+- Uploaded document.
+- OCR extraction.
+- Official legal source.
+- Lawyer review.
+- User correction.
+
+When a user resolves a contradiction or changes an answer, update relevant analysis and flag affected drafts as potentially outdated.
+
+Do not silently rewrite previously approved documents.
+
+Support explicit document versioning and a change summary.
+
+## 11. TECHNICAL ARCHITECTURE
+
+Implement a modular architecture with these components.
+
+Frontend:
+- App shell.
+- Authentication screens.
+- Dashboard.
+- Case intake forms.
+- Questionnaire.
+- Document upload manager.
+- Case analysis panels.
+- Evidence register.
+- Timeline visualisation.
+- Legal document editor.
+- Export interface.
+- Account and privacy settings.
+
+Backend domain modules:
+- Authentication and authorisation.
+- Case management.
+- Party management.
+- Incident intake.
+- Question generation and answer management.
+- Legal research.
+- Legal source ingestion.
+- Statutory version management.
+- Fact extraction.
+- Document ingestion.
+- OCR.
+- Timeline analysis.
+- Contradiction detection.
+- Evidence gap analysis.
+- Legal document generation.
+- Export generation.
+- Audit logging.
+- Notifications and processing status.
+- Legal aid directory.
+
+AI orchestration:
+- Input normalisation.
+- Case classification.
+- Entity extraction.
+- Event extraction.
+- Legal retrieval.
+- Legal element mapping.
+- Question generation.
+- Contradiction analysis.
+- Evidence gap reasoning.
+- Document drafting.
+- Output validation.
+
+External integrations:
+- LLM provider.
+- Authoritative legal sources.
+- Object storage.
+- OCR engine.
+- Email or notification service, if configured.
+- Optional background worker.
+
+Keep the legal domain logic independent of a particular AI provider.
+
+### Suggested project structure
+
+Use an organised structure comparable to:
+
+src/
+  app/
+    (public)/
+    (auth)/
+    (dashboard)/
+    api/
+  components/
+    ui/
+    layout/
+    cases/
+    legal/
+    documents/
+    timeline/
+    evidence/
+  features/
+    authentication/
+    case-management/
+    know-your-case/
+    manage-your-case/
+    legal-research/
+    document-analysis/
+    drafting/
+    legal-aid/
+  lib/
+    auth/
+    database/
+    security/
+    storage/
+    validation/
+    logging/
+  services/
+    ai/
+    legal-sources/
+    document-processing/
+    ocr/
+    contradiction-detection/
+    timeline/
+    evidence-analysis/
+    document-generation/
+  schemas/
+  types/
+  hooks/
+  tests/
+
+supabase/
+  migrations/
+  seed.sql
+
+scripts/
+  ingest-legal-sources/
+  verify-legal-sources/
+  seed-demo-data/
+
+tests/
+  unit/
+  integration/
+  e2e/
+
+docs/
+  architecture.md
+  legal-source-policy.md
+  security.md
+  deployment.md
+
+Adapt this structure to the actual framework without sacrificing separation of concerns.
+
+## 12. DATABASE DESIGN
+
+Create relational tables with appropriate foreign keys, constraints, indexes, and timestamps.
+
+At minimum, implement:
+
+profiles
+cases
+case_members
+parties
+party_aliases
+case_events
+case_facts
+fact_sources
+legal_issues
+legal_sources
+legal_source_versions
+legal_provisions
+provision_requirements
+fact_provision_mappings
+questions
+answers
+answer_versions
+documents
+document_pages
+document_extractions
+document_chunks
+evidence_items
+witnesses
+contradictions
+evidence_gaps
+procedural_findings
+case_analysis_runs
+case_reports
+legal_drafts
+draft_versions
+draft_citations
+annexures
+deadlines
+legal_aid_resources
+audit_logs
+processing_jobs
+user_feedback
+
+Add any additional tables needed for a coherent implementation.
+
+Requirements:
+- Use UUIDs or equivalent secure identifiers.
+- Enforce case ownership and membership.
+- Prevent unauthorised cross-case access.
+- Use appropriate cascade or restricted deletion behaviour.
+- Store source provenance.
+- Store legal-source effective dates and verification timestamps.
+- Keep AI run metadata and schema versions.
+- Avoid duplicating authoritative legal text unnecessarily.
+- Store sensitive information only when necessary.
+- Never store secrets in database records.
+- Apply Row Level Security to all relevant user-owned data.
+- Create indexes for common case, document, source, and status queries.
+- Use transactions for related mutations.
+- Use migrations rather than manual production schema edits.
+
+Document and justify any design choices that materially affect security or legal provenance.
+
+## 13. AI SERVICE IMPLEMENTATION
+
+Create provider adapters and typed service interfaces.
+
+Do not call the AI provider directly from UI components.
+
+Use:
+- Environment-based provider configuration.
+- Server-side API calls.
+- Explicit model configuration.
+- Timeouts.
+- Bounded retries.
+- Rate limits.
+- Request validation.
+- Output validation.
+- Token and file-processing limits.
+- Usage logging that avoids sensitive prompt leakage.
+- Error handling.
+- Cancellation where appropriate.
+- Idempotency for long-running operations.
+
+Use Zod or equivalent schemas to validate all structured AI outputs.
+
+Create schemas for:
+- Case classification.
+- Extracted facts.
+- Entities.
+- Events.
+- Legal issues.
+- Legal provisions.
+- Legal element mappings.
+- Questions.
+- Contradictions.
+- Evidence gaps.
+- Procedural findings.
+- Chronology entries.
+- Draft sections.
+- Citations.
+- Final case reports.
+
+The AI must return source identifiers and confidence explanations, not fabricated URLs or unsupported citations.
+
+Validate all source references against retrieved source records.
+
+Use deterministic code for calculations, date comparisons, validation, permissions, and other operations where deterministic logic is preferable to generative reasoning.
+
+Use AI for contextual interpretation only where it adds value.
+
+## 14. LEGAL RAG AND SOURCE GOVERNANCE
+
+Implement retrieval-augmented generation using authoritative legal material.
+
+Required flow:
+
+1. Identify the legal issue.
+2. Determine jurisdiction and relevant date.
+3. Search the legal source index.
+4. Retrieve relevant source passages.
+5. Filter by legal relevance and applicable time period.
+6. Check source status and metadata.
+7. Pass source passages to the model.
+8. Generate a structured analysis.
+9. Validate every cited source.
+10. Display the source alongside the conclusion.
+11. Record the retrieval and verification timestamps.
+
+Support keyword and semantic retrieval where feasible.
+
+Use PostgreSQL full-text search and vector retrieval if the configured embedding provider and database support it.
+
+Do not make vector search a substitute for source validation.
+
+Create a source ingestion pipeline with:
+- Source URL.
+- Retrieval date.
+- Source type.
+- Publisher.
+- Text extraction.
+- Content checksum.
+- Version metadata.
+- Effective date metadata.
+- Amendment relationship.
+- Verification status.
+- Indexing status.
+- Error reporting.
+
+Do not assume that a live public website offers a supported API or permits unrestricted scraping.
+
+Use official APIs, authorised data sources, published downloads, or permitted retrieval methods.
+
+If source ingestion cannot be performed because access or credentials are unavailable, implement the ingestion framework and report that the corpus requires setup.
+
+Never silently fill missing legal-source data with invented examples.
+
+Clearly label any seeded demonstration data as synthetic.
+
+## 15. DOCUMENT PROCESSING AND RETRIEVAL
+
+Extract text with page-level provenance.
+
+For each extracted passage, preserve:
+- Document ID.
+- Page number.
+- Paragraph or section reference, where available.
+- Text.
+- Character offsets, where practical.
+- Extraction method.
+- OCR confidence, where available.
+- Processing version.
+
+For scanned records, use OCR and allow manual correction.
+
+Keep the original source unchanged.
+
+Treat uploaded files as untrusted input.
+
+Prompt injection or malicious instructions inside documents must never override system instructions, permissions, or application policies.
+
+Do not interpret instructions contained inside an uploaded document as permission to disclose other files, execute code, or perform external actions.
+
+Apply per-user access controls during retrieval, not just when displaying results.
+
+A user must never retrieve another user's case material through a search index.
+
+## 16. SECURITY, PRIVACY, AND LEGAL COMPLIANCE
+
+Treat security as a core product feature.
+
+Implement:
+- Secure authentication.
+- Email verification where supported.
+- Secure session handling.
+- Server-side authorisation.
+- Database Row Level Security.
+- Private file storage.
+- Short-lived signed file URLs.
+- Encryption in transit.
+- Encryption at rest through appropriately configured infrastructure.
+- Input validation.
+- Output encoding.
+- CSRF protections where applicable.
+- Rate limiting.
+- Brute-force protection.
+- Upload size and type validation.
+- Protection against SQL injection.
+- Protection against XSS.
+- SSRF protections for URL fetching.
+- Secure secret management.
+- Dependency auditing.
+- Audit logs.
+- Account deletion workflow.
+- Case deletion workflow.
+- Data export workflow.
+- Configurable retention.
+- Backup and recovery documentation.
+- Error messages that do not leak sensitive information.
+
+Review applicable Indian privacy and data protection requirements, including the Digital Personal Data Protection Act, 2023, applicable notified rules and commencement dates, IT Act obligations where relevant, and other applicable confidentiality and cybersecurity requirements.
+
+Do not assume all statutory provisions have commenced simultaneously.
+
+Implement:
+- Clear privacy notice.
+- Purpose limitation.
+- Data minimisation.
+- Appropriate lawful processing basis.
+- Consent management where applicable.
+- Third-party disclosure transparency.
+- Retention and deletion rules.
+- Data subject request handling.
+- Appropriate processor and vendor review.
+- Special care for children's data and highly sensitive records.
+- Incident response procedures.
+
+Do not use legal documents to train external models unless there is a separately established, lawful, explicit, transparent basis for doing so.
+
+Minimise sensitive information sent to third-party AI services.
+
+Never expose API keys in browser code.
+
+Never place confidential user documents in public storage.
+
+Ensure logs do not unintentionally record full legal narratives, identity numbers, financial records, or sensitive document contents.
+
+### Legal safeguards
+
+Display clear, proportionate notices that the system provides legal information and drafting assistance, not guaranteed legal advice or representation.
+
+Do not promise legal outcomes.
+
+Do not represent AI-generated drafts as automatically court-ready.
+
+Make human review available for material legal uncertainties.
+
+Do not fabricate facts, evidence, judgments, legal provisions, or procedural requirements.
+
+Do not advise users to destroy, alter, fabricate, or improperly obtain evidence.
+
+Do not claim that a person is guilty or that fraud has occurred solely because an AI detects a discrepancy.
+
+Provide appropriate emergency and legal aid referrals where relevant.
+
+## 17. LEGAL AID DIRECTORY
+
+Implement a searchable directory of official legal aid resources.
+
+Include:
+- National Legal Services Authority.
+- State Legal Services Authorities.
+- District Legal Services Authorities.
+- Taluk Legal Services Committees.
+- Relevant High Court Legal Services Committees.
+- Supreme Court Legal Services Committee.
+- Other verified official legal aid resources where available.
+
+For each resource, store:
+- Organisation name.
+- Jurisdiction.
+- Official website.
+- Published contact information.
+- Address, when verified.
+- Service description.
+- Eligibility information, where published.
+- Source URL.
+- Last verified date.
+
+Do not invent phone numbers, office addresses, eligibility criteria, or opening hours.
+
+Clearly indicate when information has not been recently verified.
+
+Explain that eligibility depends on applicable law and the relevant authority's requirements.
+
+## 18. UX INTERACTION REQUIREMENTS
+
+Every interactive element must work.
+
+Implement:
+- Working navigation.
+- Real form validation.
+- Loading indicators.
+- Success and error messages.
+- Empty states.
+- Search and filters.
+- Pagination where needed.
+- Upload progress.
+- Processing status.
+- Retry actions.
+- Auto-save.
+- Draft recovery.
+- Confirmation before destructive actions.
+- Responsive dialogs.
+- Keyboard-accessible menus.
+- Toasts or inline notifications.
+- Useful disabled states.
+- Unsaved changes warnings.
+- Clear error recovery.
+- Document preview.
+- Source inspection.
+- Expandable analysis findings.
+- Finding resolution controls.
+- Version comparison.
+- Export controls.
+
+Avoid buttons that look functional but do nothing.
+
+If an external feature requires credentials, show an accurate setup or unavailable state rather than a fake successful result.
+
+Use optimistic UI updates only when failures can be handled safely.
+
+Never claim that an upload, deletion, export, or save succeeded before receiving confirmation from the actual operation.
+
+## 19. API DESIGN
+
+Create typed, authenticated APIs or server actions for the application's operations.
+
+Example endpoints may include:
+
+POST /api/cases
+GET /api/cases
+GET /api/cases/[caseId]
+PATCH /api/cases/[caseId]
+DELETE /api/cases/[caseId]
+
+POST /api/cases/[caseId]/assess
+POST /api/cases/[caseId]/questions
+POST /api/cases/[caseId]/answers
+POST /api/cases/[caseId]/reanalyze
+
+POST /api/cases/[caseId]/documents
+GET /api/cases/[caseId]/documents
+GET /api/documents/[documentId]
+POST /api/documents/[documentId]/process
+
+POST /api/cases/[caseId]/analyze-documents
+GET /api/cases/[caseId]/findings
+PATCH /api/findings/[findingId]
+
+GET /api/cases/[caseId]/timeline
+GET /api/cases/[caseId]/evidence
+GET /api/cases/[caseId]/parties
+
+POST /api/cases/[caseId]/drafts
+GET /api/drafts/[draftId]
+PATCH /api/drafts/[draftId]
+POST /api/drafts/[draftId]/export
+
+GET /api/legal-sources/search
+GET /api/legal-aid/search
+
+Adapt routes to the chosen framework and implementation.
+
+Validate every request.
+
+Enforce authorisation on every case-specific operation.
+
+Use structured error responses.
+
+Use appropriate HTTP status codes.
+
+Avoid leaking stack traces or internal prompts.
+
+Do not allow users to select arbitrary database table names or bypass domain validation.
+
+## 20. PERFORMANCE AND RELIABILITY
+
+Implement:
+- Pagination for lists.
+- Database indexes.
+- Lazy loading where useful.
+- Efficient document chunking.
+- Bounded concurrency.
+- Background jobs for lengthy work.
+- Processing status polling or server-sent events where appropriate.
+- Retry and recovery policies.
+- Request timeouts.
+- Rate limits.
+- Duplicate-upload handling where appropriate.
+- Caching for safe, non-sensitive public legal source data.
+- Cache invalidation when legal sources change.
+- Monitoring hooks.
+- Structured error logging.
+
+Do not cache private case information in a shared cache without strict isolation.
+
+Do not run large OCR or AI workloads inside short-lived requests if doing so risks timeouts.
+
+Make the system resilient to missing OCR, unavailable AI providers, invalid PDFs, corrupt DOCX files, and unavailable legal sources.
+
+## 21. TESTING AND QUALITY ASSURANCE
+
+Write real automated tests.
+
+### Unit tests
+Test:
+- Input schemas.
+- Date normalisation.
+- Fact extraction schemas.
+- Source validation.
+- Legal citation validation.
+- Applicability status handling.
+- Contradiction classification.
+- Timeline construction.
+- Evidence gap classification.
+- Document formatting.
+- Export generation.
+- Permission checks.
+- Redaction and sanitisation helpers.
+
+### Integration tests
+Test:
+- Authentication.
+- Case creation.
+- Database isolation.
+- File upload.
+- Document processing.
+- Question generation.
+- Answer persistence.
+- Reassessment.
+- Draft generation.
+- Source citation verification.
+- Export operations.
+- Error handling.
+
+### End-to-end tests
+Test:
+1. A new user signs up.
+2. The user opens Know Your Case.
+3. The user describes a sample incident.
+4. The system creates a case.
+5. The system returns a structured assessment or an explicit provider-configuration error.
+6. The user answers clarification questions.
+7. The user reviews the updated assessment.
+8. The user generates and edits a draft.
+9. The user exports the draft.
+10. The user creates a Manage Your Case workspace.
+11. The user uploads sample documents.
+12. The system extracts document text.
+13. The system displays source-linked findings.
+14. The user resolves a discrepancy.
+15. The updated report reflects that resolution.
+16. A different user cannot access the case or documents.
+
+Use synthetic test data only.
+
+Do not put real personal legal records in tests.
+
+### Legal reliability tests
+Include cases involving:
+- Ambiguous dates.
+- Missing names.
+- Conflicting amounts.
+- Unsupported allegations.
+- Incomplete chronology.
+- Outdated legal references.
+- Similar but legally distinct provisions.
+- Transitional criminal-law questions.
+- OCR errors.
+- Incorrectly extracted section numbers.
+- Missing source citations.
+- Prompt injection inside uploaded documents.
+- Contradictions that are explainable.
+- "I don't know" answers.
+- "Not applicable" answers.
+- Unknown jurisdiction.
+- Urgent safety situations.
+- Potentially imminent deadlines.
+
+Verify that the system never converts unknown facts into fabricated assertions.
+
+### Required validation commands
+
+Run the equivalent of:
+- Dependency installation.
+- Type checking.
+- Linting.
+- Unit tests.
+- Integration tests where configured.
+- Production build.
+- Database migration validation.
+- End-to-end tests where the environment supports them.
+
+Fix failures rather than merely listing them.
+
+If a command cannot run because of a missing credential, service, browser, or system dependency, report the exact reason.
+
+Never claim a test passed unless it actually ran and passed.
+
+## 22. ENVIRONMENT CONFIGURATION
+
+Create a comprehensive .env.example.
+
+Include only configuration variable names and safe placeholder values.
+
+Examples may include:
+- NEXT_PUBLIC_APP_URL
+- NEXT_PUBLIC_SUPABASE_URL
+- NEXT_PUBLIC_SUPABASE_ANON_KEY
+- SUPABASE_SERVICE_ROLE_KEY
+- DATABASE_URL
+- AI_PROVIDER
+- AI_API_KEY
+- AI_MODEL
+- EMBEDDING_PROVIDER
+- EMBEDDING_API_KEY
+- OCR_PROVIDER
+- OCR_API_KEY
+- STORAGE_BUCKET
+- BACKGROUND_JOB_SECRET
+- EMAIL_PROVIDER
+- EMAIL_API_KEY
+
+Adapt the list to the implemented integrations.
+
+Never commit real secrets.
+
+Never use a service-role key in client-side code.
+
+Validate required configuration at application startup or before the affected operation.
+
+Provide clear instructions for each required variable.
+
+## 23. DEVELOPMENT SEED DATA
+
+Provide synthetic sample cases and documents so the application can be tested locally.
+
+Examples:
+- A contractual payment dispute.
+- A consumer complaint.
+- A fictional tenancy dispute.
+- A document set with conflicting dates.
+- A document set with a missing referenced annexure.
+- A case with insufficient information.
+
+Label all sample content as fictional.
+
+Do not represent fabricated legal citations as real.
+
+Do not silently use synthetic statutory text as an authoritative legal corpus.
+
+Keep demo data isolated from real user data.
+
+Create a repeatable seed script.
+
+## 24. REQUIRED DELIVERABLES
+
+Create the actual project files.
+
+At minimum, deliver:
+1. Complete frontend application.
+2. Complete backend implementation.
+3. Database schema and migrations.
+4. Authentication and authorisation.
+5. Secure file storage integration.
+6. Know Your Case workflow.
+7. Adaptive clarification engine.
+8. Legal source retrieval architecture.
+9. Source-grounded legal analysis.
+10. Manage Your Case workflow.
+11. Document extraction and OCR integration.
+12. Contradiction detection.
+13. Timeline analysis.
+14. Evidence register.
+15. Procedural issue detection.
+16. Structured legal document drafting.
+17. DOCX and PDF export.
+18. Legal aid directory.
+19. Privacy and security controls.
+20. Reusable UI component library.
+21. Unit and integration tests.
+22. End-to-end test suite.
+23. Synthetic seed data.
+24. .env.example.
+25. README with exact setup instructions.
+26. Database setup and migration instructions.
+27. Deployment configuration.
+28. Security documentation.
+29. Legal source governance documentation.
+30. Architecture documentation.
+31. List of external services and credentials required.
+32. Test and build results.
+33. List of known limitations and incomplete integrations.
+
+Do not substitute screenshots for source code.
+
+Do not substitute a Figma-style mockup for a functioning application.
+
+Do not substitute hardcoded analysis results for real application logic.
+
+Do not fabricate backend success responses.
+
+Do not leave primary workflows as TODOs.
+
+If a capability cannot be completed due to a genuinely unavailable external dependency, implement the interface, validation, error handling, and integration boundary, and document the precise limitation.
+
+## 25. IMPLEMENTATION EXECUTION RULES
+
+Start by inspecting the current working directory and the available execution environment.
+
+Determine whether a project already exists.
+
+Inspect existing package files, framework configuration, available tools, and credentials without printing secrets.
+
+Then implement the entire application in the current project.
+
+Create files directly.
+
+Install required dependencies where permitted.
+
+Create database migrations.
+
+Configure the application.
+
+Implement the major user flows.
+
+Run the available tests and build.
+
+Fix errors.
+
+Verify responsive UI and important interactions.
+
+Do not stop after generating a directory tree or writing an architecture document.
+
+Do not send me a list of files for me to create manually when you can create them yourself.
+
+Do not stop at a partial frontend.
+
+Do not repeatedly ask for permission to continue.
+
+Make reasonable decisions about libraries, components, schema names, and architecture.
+
+If the execution environment has a time or output limit, prioritise a coherent, runnable application with working end-to-end core workflows and real persistence over numerous disconnected stubs. Continue implementing the remaining requirements in the same execution wherever possible.
+
+Do not hide any limitation.
+
+## 26. FINAL ACCEPTANCE CRITERIA
+
+The application is acceptable only when:
+
+- The landing page and dashboard render correctly.
+- Google Sans is configured correctly and its actual availability is verified.
+- Both primary features are accessible.
+- A user can create and save a case.
+- The incident intake form validates input.
+- The assessment workflow uses a real server-side service.
+- Clarification questions and answers persist.
+- Legal analysis uses source records and exposes uncertainty.
+- The platform does not invent law or citations.
+- The user can generate and edit a structured legal draft.
+- Documents can be uploaded securely.
+- Text can be extracted from supported documents.
+- Findings have source references.
+- Timeline and evidence registers work.
+- Contradiction findings can be reviewed and resolved.
+- The user can export supported document formats.
+- Case access is isolated between users.
+- Errors and missing credentials are handled honestly.
+- The application builds successfully in the configured environment.
+- Tests are run and their actual results are reported.
+- Setup and deployment instructions are reproducible.
+
+## 27. FINAL RESPONSE AFTER IMPLEMENTATION
+
+After building, provide a concise engineering handover containing:
+
+1. What was actually implemented.
+2. Main application routes.
+3. Architecture and technology choices.
+4. Files and modules created.
+5. Database migrations and seed data.
+6. Environment variables required.
+7. Exact commands to run locally.
+8. Tests executed and their actual results.
+9. Production build status.
+10. External credentials still required.
+11. Legal-source ingestion status.
+12. Google Sans verification status.
+13. Security considerations and remaining risks.
+14. Known limitations.
+15. Exact instructions to deploy.
+
+Clearly distinguish:
+- Fully implemented and tested.
+- Implemented but dependent on external credentials.
+- Implemented but not fully tested.
+- Not implemented.
+
+Never state that the system is production-ready merely because the frontend builds.
+
+Never claim legal correctness without an appropriate source-verification and legal-review process.
+
+Now inspect the environment and BUILD THE COMPLETE INTEGRATED APPLICATION.

@@ -1,0 +1,208 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e8]: "National Legal Aid Helpline:"
+        - link "15100 (24x7 Toll-Free)" [ref=e9] [cursor=pointer]:
+          - /url: tel:15100
+        - generic [ref=e10]: "|"
+        - generic [ref=e11]: "Cyber Fraud:"
+        - link "1930" [ref=e12] [cursor=pointer]:
+          - /url: tel:1930
+      - generic [ref=e13]:
+        - generic [ref=e14]: Informational Legal Tech Platform (India)
+        - generic [ref=e15]: •
+        - generic [ref=e16]: DPDP Act Compliant
+    - generic [ref=e18]:
+      - button "Nyaya Home" [ref=e20]:
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - text: न्याय
+            - generic [ref=e28]: Nyaya
+          - generic [ref=e29]: Legal Case Intelligence
+      - generic [ref=e30]:
+        - button "Know Your Case" [ref=e31]
+        - button "Manage Your Case" [ref=e35]
+      - generic [ref=e39]:
+        - button "Saved Cases (4)" [ref=e40]
+        - button "Legal Aid Directory" [active] [ref=e45]
+        - button "Statutes" [ref=e54]
+        - button "Settings and Privacy" [ref=e58]
+  - main [ref=e62]:
+    - generic [ref=e839]:
+      - generic [ref=e840]:
+        - generic [ref=e841]:
+          - generic [ref=e842]: Statutory Legal Services Authorities
+          - heading "Official Legal Aid Directory (India)" [level=1] [ref=e852]
+          - paragraph [ref=e853]: Verified contact details for NALSA, State Legal Services Authorities (SLSAs), and Tele-Law.
+        - button "Who is Eligible for Free Legal Aid?" [ref=e854]
+      - generic [ref=e859]:
+        - generic [ref=e860]:
+          - generic [ref=e861]: 24x7 Nationwide Toll-Free
+          - generic [ref=e862]: "National Legal Aid Helpline: 15100"
+          - paragraph [ref=e863]: Administered by the National Legal Services Authority (NALSA) for immediate legal advice, advocate assignment, and information on pending Lok Adalats.
+        - link "Call 15100 Toll-Free" [ref=e864] [cursor=pointer]:
+          - /url: tel:15100
+      - generic [ref=e868]:
+        - textbox "Search by state, authority name, or services offered..." [ref=e873]
+        - generic [ref=e874]:
+          - generic [ref=e875]: "State / UT:"
+          - combobox [ref=e876]:
+            - option "All India" [selected]
+            - option "Andhra Pradesh"
+            - option "Arunachal Pradesh"
+            - option "Assam"
+            - option "Bihar"
+            - option "Chhattisgarh"
+            - option "Delhi"
+            - option "Goa"
+            - option "Gujarat"
+            - option "Haryana"
+            - option "Himachal Pradesh"
+            - option "Jharkhand"
+            - option "Karnataka"
+            - option "Kerala"
+            - option "Madhya Pradesh"
+            - option "Maharashtra"
+            - option "Manipur"
+            - option "Meghalaya"
+            - option "Mizoram"
+            - option "Nagaland"
+            - option "Odisha"
+            - option "Punjab"
+            - option "Rajasthan"
+            - option "Sikkim"
+            - option "Tamil Nadu"
+            - option "Telangana"
+            - option "Tripura"
+            - option "Uttar Pradesh"
+            - option "Uttarakhand"
+            - option "West Bengal"
+            - option "Andaman and Nicobar Islands"
+            - option "Chandigarh"
+            - option "Dadra and Nagar Haveli and Daman and Diu"
+            - option "Jammu and Kashmir"
+            - option "Ladakh"
+            - option "Lakshadweep"
+            - option "Puducherry"
+      - generic [ref=e877]:
+        - generic [ref=e878]:
+          - generic [ref=e879]:
+            - generic [ref=e880]:
+              - generic [ref=e881]: national authority
+              - generic [ref=e882]: "Jurisdiction: All India"
+            - heading "National Legal Services Authority (NALSA)" [level=3] [ref=e883]
+            - paragraph [ref=e884]: Apex statutory body established under Legal Services Authorities Act, 1987. Provides free legal aid, organizes Lok Adalats, and runs the nationwide 24x7 legal aid helpline 15100.
+          - generic [ref=e885]:
+            - generic [ref=e886]: B-Block, Ground Floor, Additional Building Complex, Supreme Court of India, New Delhi - 110001
+            - generic [ref=e891]:
+              - 'link "Helpline: 15100" [ref=e895] [cursor=pointer]':
+                - /url: tel:15100
+              - generic [ref=e896]: "Office: 011-23382778"
+            - generic [ref=e898]: nalsa-dla@nic.in
+          - generic [ref=e903]:
+            - generic [ref=e904]: "Verified: 2024-09-01"
+            - link "Visit Official Portal" [ref=e905] [cursor=pointer]:
+              - /url: https://nalsa.gov.in
+        - generic [ref=e911]:
+          - generic [ref=e912]:
+            - generic [ref=e913]:
+              - generic [ref=e914]: specialized authority
+              - generic [ref=e915]: "Jurisdiction: All India (Supreme Court matters)"
+            - heading "Supreme Court Legal Services Committee (SCLSC)" [level=3] [ref=e916]
+            - paragraph [ref=e917]: Provides free legal services, advocate appointment, and filing of Special Leave Petitions (SLPs) and Appeals before the Supreme Court of India.
+          - generic [ref=e918]:
+            - generic [ref=e919]: 107, Lawyers Chambers, Supreme Court of India Compound, New Delhi - 110001
+            - generic [ref=e924]:
+              - 'link "Helpline: 15100" [ref=e928] [cursor=pointer]':
+                - /url: tel:15100
+              - generic [ref=e929]: "Office: 011-23388313"
+            - generic [ref=e931]: sclsc@nic.in
+          - generic [ref=e936]:
+            - generic [ref=e937]: "Verified: 2024-09-01"
+            - link "Visit Official Portal" [ref=e938] [cursor=pointer]:
+              - /url: https://sclsc.gov.in
+        - generic [ref=e944]:
+          - generic [ref=e945]:
+            - generic [ref=e946]:
+              - generic [ref=e947]: national authority
+              - generic [ref=e948]: "Jurisdiction: All India (Rural & Urban Panchayats)"
+            - heading "Tele-Law (Department of Justice & CSC e-Governance)" [level=3] [ref=e949]
+            - paragraph [ref=e950]: Connects citizens with panel lawyers via video conferencing and telephone at Common Service Centres (CSCs) across 1 Lakh+ Gram Panchayats. Free for eligible persons under Section 12.
+          - generic [ref=e951]:
+            - generic [ref=e952]: Department of Justice, Jaisalmer House, 26, Man Singh Road, New Delhi - 110011
+            - generic [ref=e957]:
+              - 'link "Helpline: 14417" [ref=e961] [cursor=pointer]':
+                - /url: tel:14417
+              - generic [ref=e962]: "Office: 1800-180-1510"
+          - generic [ref=e964]:
+            - generic [ref=e965]: "Verified: 2024-09-01"
+            - link "Visit Official Portal" [ref=e966] [cursor=pointer]:
+              - /url: https://www.tele-law.in
+  - contentinfo [ref=e232]:
+    - generic [ref=e237]:
+      - paragraph [ref=e238]: Legal Assistance & Non-Advocate Disclaimer
+      - paragraph [ref=e239]: Nyaya is an automated legal case preparation, factual structuring, and evidence management technology platform. Nyaya does not provide formal legal advice, legal opinions, or court representation. No advocate-client privilege or fiduciary relationship is created by using this service. The laws of India, including the Bharatiya Nyaya Sanhita (BNS 2023), Bharatiya Nagarik Suraksha Sanhita (BNSS 2023), and relevant civil procedural codes, require human advocate scrutiny for court filings. If you are experiencing immediate danger or domestic violence, call emergency helpline 112 or Women Helpline 181 immediately.
+    - generic [ref=e240]:
+      - generic [ref=e241]:
+        - generic [ref=e242]:
+          - generic [ref=e243]: न्याय Nyaya Platform
+          - paragraph [ref=e245]: Empowering citizens across India with structured legal fact-finding, evidence verification, and official legal aid resources.
+          - generic [ref=e246]: DPDP Act, 2023 Compliant
+        - generic [ref=e251]:
+          - paragraph [ref=e252]: Primary Portals
+          - list [ref=e253]:
+            - listitem [ref=e254]:
+              - link "Know Your Case Intake" [ref=e255] [cursor=pointer]:
+                - /url: "#know-your-case"
+            - listitem [ref=e256]:
+              - link "Manage Your Case Workspace" [ref=e257] [cursor=pointer]:
+                - /url: "#manage-your-case"
+            - listitem [ref=e258]:
+              - link "Indian Statutes & BNS/IPC Transition" [ref=e259] [cursor=pointer]:
+                - /url: "#law-library"
+            - listitem [ref=e260]:
+              - link "NALSA / SLSA Directory" [ref=e261] [cursor=pointer]:
+                - /url: "#legal-aid"
+        - generic [ref=e262]:
+          - paragraph [ref=e263]: Emergency & Help
+          - list [ref=e264]:
+            - listitem [ref=e265]:
+              - generic [ref=e268]:
+                - text: "NALSA Legal Aid:"
+                - strong [ref=e269]: "15100"
+            - listitem [ref=e270]:
+              - generic [ref=e273]:
+                - text: "Cyber Crime:"
+                - strong [ref=e274]: "1930"
+            - listitem [ref=e275]:
+              - generic [ref=e278]:
+                - text: "Police Emergency:"
+                - strong [ref=e279]: "112"
+            - listitem [ref=e280]:
+              - generic [ref=e283]:
+                - text: "Women in Distress:"
+                - strong [ref=e284]: "181"
+        - generic [ref=e285]:
+          - paragraph [ref=e286]: Official Indian Portals
+          - list [ref=e287]:
+            - listitem [ref=e288]:
+              - link "India Code (Govt. of India)" [ref=e289] [cursor=pointer]:
+                - /url: https://www.indiacode.nic.in
+            - listitem [ref=e295]:
+              - link "eCourts Services Portal" [ref=e296] [cursor=pointer]:
+                - /url: https://ecourts.gov.in
+            - listitem [ref=e302]:
+              - link "NALSA Official Portal" [ref=e303] [cursor=pointer]:
+                - /url: https://nalsa.gov.in
+            - listitem [ref=e309]:
+              - link "National Cyber Crime Portal" [ref=e310] [cursor=pointer]:
+                - /url: https://cybercrime.gov.in
+      - generic [ref=e316]:
+        - paragraph [ref=e317]: © 2026 Nyaya — Dedicated to accessible legal intelligence in India.
+        - generic [ref=e318]:
+          - generic [ref=e319]: Privacy Policy
+          - generic [ref=e320]: •
+          - generic [ref=e321]: Terms of Service
+          - generic [ref=e322]: •
+          - generic [ref=e323]: Security Standards

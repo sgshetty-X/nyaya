@@ -1,0 +1,6 @@
+{
+  "name": "Nyaya — AI Legal Aid & Case Preparation Platform",
+  "description": "AI-powered legal case preparation, factual analysis, evidence verification, and legal aid directory for India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

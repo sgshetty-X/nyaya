@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Google Sans', 'Google Sans Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-google-blue: #1a73e8;
+  --color-google-blue-hover: #1765cc;
+  --color-google-blue-light: #e8f0fe;
+  --color-google-green: #1e8e3e;
+  --color-google-green-light: #e6f4ea;
+  --color-google-amber: #e37400;
+  --color-google-amber-light: #fef7e0;
+  --color-google-red: #d93025;
+  --color-google-red-light: #fce8e6;
+  --color-surface: #ffffff;
+  --color-surface-variant: #f8f9fa;
+  --color-outline: #dadce0;
+}
+
+@layer base {
+  * {
+    border-color: #dadce0;
+  }
+  html {
+    font-family: 'Google Sans', 'Google Sans Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #202124;
+    background-color: #ffffff;
+  }
+  body {
+    font-family: 'Google Sans', 'Google Sans Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6, button, input, select, textarea {
+    font-family: 'Google Sans', 'Google Sans Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Print styling for legal documents */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .legal-document-content {
+    font-size: 12pt !important;
+    line-height: 1.6 !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}

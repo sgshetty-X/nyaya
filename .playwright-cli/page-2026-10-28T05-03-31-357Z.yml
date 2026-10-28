@@ -1,0 +1,277 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e8]: "National Legal Aid Helpline:"
+        - link "15100 (24x7 Toll-Free)" [ref=e9] [cursor=pointer]:
+          - /url: tel:15100
+        - generic [ref=e10]: "|"
+        - generic [ref=e11]: "Cyber Fraud:"
+        - link "1930" [ref=e12] [cursor=pointer]:
+          - /url: tel:1930
+      - generic [ref=e13]:
+        - generic [ref=e14]: Informational Legal Tech Platform (India)
+        - generic [ref=e15]: •
+        - generic [ref=e16]: DPDP Act Compliant
+    - generic [ref=e18]:
+      - button "Nyaya Home" [ref=e20]:
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - text: न्याय
+            - generic [ref=e28]: Nyaya
+          - generic [ref=e29]: Legal Case Intelligence
+      - generic [ref=e30]:
+        - button "Know Your Case" [ref=e31]
+        - button "Manage Your Case" [ref=e35]
+      - generic [ref=e39]:
+        - button "Saved Cases (4)" [ref=e40]
+        - button "Legal Aid Directory" [ref=e45]
+        - button "Statutes" [active] [ref=e54]
+        - button "Settings and Privacy" [ref=e58]
+  - main [ref=e62]:
+    - generic [ref=e624]:
+      - generic [ref=e625]:
+        - generic [ref=e626]: Authoritative Statutory Reference
+        - heading "Indian Statutes & Law Library" [level=1] [ref=e631]
+        - paragraph [ref=e632]: Verified central statutes, transitional criminal jurisprudence, and official India Code links.
+      - generic [ref=e633]:
+        - generic [ref=e634]:
+          - text: Interactive Statutory Checker
+          - 'heading "Criminal Law Transition: BNS 2023 vs IPC 1860" [level=2] [ref=e635]'
+          - paragraph [ref=e636]: On 1 July 2024, the new criminal laws came into effect. Under Article 20(1) of the Constitution of India (protection against ex-post facto laws), substantive criminal offences are governed strictly by the law in force at the time of the commission of the act.
+        - generic [ref=e637]:
+          - generic [ref=e638]: "Select Date of Alleged Incident:"
+          - textbox "Select Date of Alleged Incident:" [ref=e639]: 2024-08-15
+        - generic [ref=e640]:
+          - generic [ref=e641]:
+            - generic [ref=e642]: "Applicable Substantive Regime:"
+            - generic [ref=e643]: Bharatiya Nyaya Sanhita, 2023 (BNS)
+          - paragraph [ref=e644]: Alleged conduct occurred on or after 1 July 2024. Substantive offences are governed by Bharatiya Nyaya Sanhita, 2023 (BNS), with procedure governed by BNSS, 2023.
+          - generic [ref=e645]:
+            - generic [ref=e646]:
+              - strong [ref=e647]: "Procedure:"
+              - text: BNSS 2023 applies to all investigations/filings from 01-07-2024
+            - generic [ref=e648]:
+              - strong [ref=e649]: "Evidence:"
+              - text: BSA 2023 governs admissibility
+      - textbox "Search Indian statutes by title or code abbreviation..." [ref=e655]
+      - generic [ref=e656]:
+        - generic [ref=e657]:
+          - generic [ref=e658]:
+            - generic [ref=e659]:
+              - generic [ref=e660]: BNS
+              - generic [ref=e661]: "Commenced: 2024-07-01"
+            - heading "Bharatiya Nyaya Sanhita, 2023" [level=3] [ref=e662]
+            - paragraph [ref=e663]:
+              - strong [ref=e664]: "Jurisdiction:"
+              - text: Union of India (Central)
+            - paragraph [ref=e665]:
+              - strong [ref=e666]: "Successor Relationship:"
+              - text: Succeeds / repeals Indian Penal Code, 1860
+          - generic [ref=e667]:
+            - generic [ref=e668]: "Authority: Ministry of Law and Justice, Gazette of India"
+            - link "India Code Link" [ref=e669] [cursor=pointer]:
+              - /url: https://www.indiacode.nic.in/handle/123456789/20062
+        - generic [ref=e675]:
+          - generic [ref=e676]:
+            - generic [ref=e677]:
+              - generic [ref=e678]: BNSS
+              - generic [ref=e679]: "Commenced: 2024-07-01"
+            - heading "Bharatiya Nagarik Suraksha Sanhita, 2023" [level=3] [ref=e680]
+            - paragraph [ref=e681]:
+              - strong [ref=e682]: "Jurisdiction:"
+              - text: Union of India (Central)
+            - paragraph [ref=e683]:
+              - strong [ref=e684]: "Successor Relationship:"
+              - text: Succeeds / repeals Code of Criminal Procedure, 1973
+          - generic [ref=e685]:
+            - generic [ref=e686]: "Authority: Ministry of Law and Justice, Gazette of India"
+            - link "India Code Link" [ref=e687] [cursor=pointer]:
+              - /url: https://www.indiacode.nic.in/handle/123456789/20063
+        - generic [ref=e693]:
+          - generic [ref=e694]:
+            - generic [ref=e695]:
+              - generic [ref=e696]: BSA
+              - generic [ref=e697]: "Commenced: 2024-07-01"
+            - heading "Bharatiya Sakshya Adhiniyam, 2023" [level=3] [ref=e698]
+            - paragraph [ref=e699]:
+              - strong [ref=e700]: "Jurisdiction:"
+              - text: Union of India (Central)
+            - paragraph [ref=e701]:
+              - strong [ref=e702]: "Successor Relationship:"
+              - text: Succeeds / repeals Indian Evidence Act, 1872
+          - generic [ref=e703]:
+            - generic [ref=e704]: "Authority: Ministry of Law and Justice, Gazette of India"
+            - link "India Code Link" [ref=e705] [cursor=pointer]:
+              - /url: https://www.indiacode.nic.in/handle/123456789/20064
+        - generic [ref=e711]:
+          - generic [ref=e712]:
+            - generic [ref=e713]:
+              - generic [ref=e714]: IPC
+              - generic [ref=e715]: "Commenced: 1862-01-01"
+            - heading "Indian Penal Code, 1860" [level=3] [ref=e716]
+            - paragraph [ref=e717]:
+              - strong [ref=e718]: "Jurisdiction:"
+              - text: Union of India (Central - applicable to conduct prior to 01-07-2024)
+          - generic [ref=e719]:
+            - generic [ref=e720]: "Authority: India Code"
+            - link "India Code Link" [ref=e721] [cursor=pointer]:
+              - /url: https://www.indiacode.nic.in/handle/123456789/2263
+        - generic [ref=e727]:
+          - generic [ref=e728]:
+            - generic [ref=e729]:
+              - generic [ref=e730]: CPA
+              - generic [ref=e731]: "Commenced: 2020-07-20"
+            - heading "Consumer Protection Act, 2019" [level=3] [ref=e732]
+            - paragraph [ref=e733]:
+              - strong [ref=e734]: "Jurisdiction:"
+              - text: Union of India (Central)
+          - generic [ref=e735]:
+            - generic [ref=e736]: "Authority: Ministry of Consumer Affairs / India Code"
+            - link "India Code Link" [ref=e737] [cursor=pointer]:
+              - /url: https://www.indiacode.nic.in/handle/123456789/15256
+        - generic [ref=e743]:
+          - generic [ref=e744]:
+            - generic [ref=e745]:
+              - generic [ref=e746]: ICA
+              - generic [ref=e747]: "Commenced: 1872-09-01"
+            - heading "Indian Contract Act, 1872" [level=3] [ref=e748]
+            - paragraph [ref=e749]:
+              - strong [ref=e750]: "Jurisdiction:"
+              - text: Union of India (Central)
+          - generic [ref=e751]:
+            - generic [ref=e752]: "Authority: India Code"
+            - link "India Code Link" [ref=e753] [cursor=pointer]:
+              - /url: https://www.indiacode.nic.in/handle/123456789/2187
+        - generic [ref=e759]:
+          - generic [ref=e760]:
+            - generic [ref=e761]:
+              - generic [ref=e762]: TPA
+              - generic [ref=e763]: "Commenced: 1882-07-01"
+            - heading "Transfer of Property Act, 1882" [level=3] [ref=e764]
+            - paragraph [ref=e765]:
+              - strong [ref=e766]: "Jurisdiction:"
+              - text: Union of India (Central)
+          - generic [ref=e767]:
+            - generic [ref=e768]: "Authority: India Code"
+            - link "India Code Link" [ref=e769] [cursor=pointer]:
+              - /url: https://www.indiacode.nic.in/handle/123456789/2338
+        - generic [ref=e775]:
+          - generic [ref=e776]:
+            - generic [ref=e777]:
+              - generic [ref=e778]: IT Act
+              - generic [ref=e779]: "Commenced: 2000-10-17"
+            - heading "Information Technology Act, 2000" [level=3] [ref=e780]
+            - paragraph [ref=e781]:
+              - strong [ref=e782]: "Jurisdiction:"
+              - text: Union of India (Central)
+          - generic [ref=e783]:
+            - generic [ref=e784]: "Authority: MeitY / India Code"
+            - link "India Code Link" [ref=e785] [cursor=pointer]:
+              - /url: https://www.indiacode.nic.in/handle/123456789/1999
+        - generic [ref=e791]:
+          - generic [ref=e792]:
+            - generic [ref=e793]:
+              - generic [ref=e794]: CPC
+              - generic [ref=e795]: "Commenced: 1909-01-01"
+            - heading "Code of Civil Procedure, 1908" [level=3] [ref=e796]
+            - paragraph [ref=e797]:
+              - strong [ref=e798]: "Jurisdiction:"
+              - text: Union of India (Central)
+          - generic [ref=e799]:
+            - generic [ref=e800]: "Authority: India Code"
+            - link "India Code Link" [ref=e801] [cursor=pointer]:
+              - /url: https://www.indiacode.nic.in/handle/123456789/2191
+        - generic [ref=e807]:
+          - generic [ref=e808]:
+            - generic [ref=e809]:
+              - generic [ref=e810]: Limitation Act
+              - generic [ref=e811]: "Commenced: 1964-01-01"
+            - heading "Limitation Act, 1963" [level=3] [ref=e812]
+            - paragraph [ref=e813]:
+              - strong [ref=e814]: "Jurisdiction:"
+              - text: Union of India (Central)
+          - generic [ref=e815]:
+            - generic [ref=e816]: "Authority: India Code"
+            - link "India Code Link" [ref=e817] [cursor=pointer]:
+              - /url: https://www.indiacode.nic.in/handle/123456789/1564
+        - generic [ref=e823]:
+          - generic [ref=e824]:
+            - generic [ref=e825]:
+              - generic [ref=e826]: PWDVA
+              - generic [ref=e827]: "Commenced: 2006-10-26"
+            - heading "Protection of Women from Domestic Violence Act, 2005" [level=3] [ref=e828]
+            - paragraph [ref=e829]:
+              - strong [ref=e830]: "Jurisdiction:"
+              - text: Union of India (Central)
+          - generic [ref=e831]:
+            - generic [ref=e832]: "Authority: Ministry of WCD / India Code"
+            - link "India Code Link" [ref=e833] [cursor=pointer]:
+              - /url: https://www.indiacode.nic.in/handle/123456789/2012
+  - contentinfo [ref=e232]:
+    - generic [ref=e237]:
+      - paragraph [ref=e238]: Legal Assistance & Non-Advocate Disclaimer
+      - paragraph [ref=e239]: Nyaya is an automated legal case preparation, factual structuring, and evidence management technology platform. Nyaya does not provide formal legal advice, legal opinions, or court representation. No advocate-client privilege or fiduciary relationship is created by using this service. The laws of India, including the Bharatiya Nyaya Sanhita (BNS 2023), Bharatiya Nagarik Suraksha Sanhita (BNSS 2023), and relevant civil procedural codes, require human advocate scrutiny for court filings. If you are experiencing immediate danger or domestic violence, call emergency helpline 112 or Women Helpline 181 immediately.
+    - generic [ref=e240]:
+      - generic [ref=e241]:
+        - generic [ref=e242]:
+          - generic [ref=e243]: न्याय Nyaya Platform
+          - paragraph [ref=e245]: Empowering citizens across India with structured legal fact-finding, evidence verification, and official legal aid resources.
+          - generic [ref=e246]: DPDP Act, 2023 Compliant
+        - generic [ref=e251]:
+          - paragraph [ref=e252]: Primary Portals
+          - list [ref=e253]:
+            - listitem [ref=e254]:
+              - link "Know Your Case Intake" [ref=e255] [cursor=pointer]:
+                - /url: "#know-your-case"
+            - listitem [ref=e256]:
+              - link "Manage Your Case Workspace" [ref=e257] [cursor=pointer]:
+                - /url: "#manage-your-case"
+            - listitem [ref=e258]:
+              - link "Indian Statutes & BNS/IPC Transition" [ref=e259] [cursor=pointer]:
+                - /url: "#law-library"
+            - listitem [ref=e260]:
+              - link "NALSA / SLSA Directory" [ref=e261] [cursor=pointer]:
+                - /url: "#legal-aid"
+        - generic [ref=e262]:
+          - paragraph [ref=e263]: Emergency & Help
+          - list [ref=e264]:
+            - listitem [ref=e265]:
+              - generic [ref=e268]:
+                - text: "NALSA Legal Aid:"
+                - strong [ref=e269]: "15100"
+            - listitem [ref=e270]:
+              - generic [ref=e273]:
+                - text: "Cyber Crime:"
+                - strong [ref=e274]: "1930"
+            - listitem [ref=e275]:
+              - generic [ref=e278]:
+                - text: "Police Emergency:"
+                - strong [ref=e279]: "112"
+            - listitem [ref=e280]:
+              - generic [ref=e283]:
+                - text: "Women in Distress:"
+                - strong [ref=e284]: "181"
+        - generic [ref=e285]:
+          - paragraph [ref=e286]: Official Indian Portals
+          - list [ref=e287]:
+            - listitem [ref=e288]:
+              - link "India Code (Govt. of India)" [ref=e289] [cursor=pointer]:
+                - /url: https://www.indiacode.nic.in
+            - listitem [ref=e295]:
+              - link "eCourts Services Portal" [ref=e296] [cursor=pointer]:
+                - /url: https://ecourts.gov.in
+            - listitem [ref=e302]:
+              - link "NALSA Official Portal" [ref=e303] [cursor=pointer]:
+                - /url: https://nalsa.gov.in
+            - listitem [ref=e309]:
+              - link "National Cyber Crime Portal" [ref=e310] [cursor=pointer]:
+                - /url: https://cybercrime.gov.in
+      - generic [ref=e316]:
+        - paragraph [ref=e317]: © 2026 Nyaya — Dedicated to accessible legal intelligence in India.
+        - generic [ref=e318]:
+          - generic [ref=e319]: Privacy Policy
+          - generic [ref=e320]: •
+          - generic [ref=e321]: Terms of Service
+          - generic [ref=e322]: •
+          - generic [ref=e323]: Security Standards

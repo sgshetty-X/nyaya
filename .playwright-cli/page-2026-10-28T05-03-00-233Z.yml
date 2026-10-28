@@ -1,0 +1,148 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e8]: "National Legal Aid Helpline:"
+        - link "15100 (24x7 Toll-Free)" [ref=e9] [cursor=pointer]:
+          - /url: tel:15100
+        - generic [ref=e10]: "|"
+        - generic [ref=e11]: "Cyber Fraud:"
+        - link "1930" [ref=e12] [cursor=pointer]:
+          - /url: tel:1930
+      - generic [ref=e13]:
+        - generic [ref=e14]: Informational Legal Tech Platform (India)
+        - generic [ref=e15]: •
+        - generic [ref=e16]: DPDP Act Compliant
+    - generic [ref=e18]:
+      - button "Nyaya Home" [ref=e20]:
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - text: न्याय
+            - generic [ref=e28]: Nyaya
+          - generic [ref=e29]: Legal Case Intelligence
+      - generic [ref=e30]:
+        - button "Know Your Case" [ref=e31]
+        - button "Manage Your Case" [active] [ref=e35]
+      - generic [ref=e39]:
+        - button "Saved Cases (4)" [ref=e40]
+        - button "Legal Aid Directory" [ref=e45]
+        - button "Statutes" [ref=e54]
+        - button "Settings and Privacy" [ref=e58]
+  - main [ref=e62]:
+    - generic [ref=e496]:
+      - generic [ref=e497]:
+        - generic [ref=e498]:
+          - generic [ref=e499]:
+            - generic [ref=e500]: B
+            - generic [ref=e501]: Manage Your Case Workspace
+          - heading "Defective Laptop & Warranty Service Denial by E-Commerce Platform" [level=1] [ref=e502]
+          - paragraph [ref=e503]: "Jurisdiction: Karnataka • Categories: consumer, contractual • Created: 1/9/2024"
+        - generic [ref=e504]:
+          - generic [ref=e505]: "Active Case:"
+          - combobox "Active Case:" [ref=e506]:
+            - option "Defective Laptop & Warranty Service Denial by E-Commerce Platform" [selected]
+            - option "Arbitrary Withholding of ₹1,20,000 Tenancy Security Deposit"
+            - option "Breach of Commercial Contract & Conflicting Delivery Records"
+            - option "Cyber Financial Fraud & UPI Impersonation Scam"
+      - generic [ref=e507]:
+        - generic [ref=e508]:
+          - button "Document Inventory (1)" [ref=e509]
+          - button "Contradiction Detection (0)" [ref=e514]
+          - button "Evidence Register" [ref=e518]
+          - button "Consolidated Chronology (4)" [ref=e523]
+          - button "Case Readiness Report" [ref=e528]
+        - generic [ref=e534]:
+          - generic [ref=e535]:
+            - generic [ref=e536]:
+              - generic [ref=e541]:
+                - heading "Upload Case Records (PDF, DOCX, TXT, Images)" [level=3] [ref=e542]
+                - paragraph [ref=e543]: Files are cryptographically checksummed with SHA-256 and stored privately. Drag & drop or paste text below.
+              - generic [ref=e544]:
+                - generic [ref=e545] [cursor=pointer]: Choose File from Device
+                - button "Paste Document Text / Excerpt" [ref=e546]
+            - generic [ref=e547]:
+              - generic [ref=e548]:
+                - heading "Uploaded Documents Inventory (1)" [level=3] [ref=e549]
+                - generic [ref=e550]: Page-level provenance preserved
+              - generic [ref=e552] [cursor=pointer]:
+                - generic [ref=e553]:
+                  - generic [ref=e554]:
+                    - generic [ref=e558]: OmniKart_Tax_Invoice_8841.pdf
+                    - generic [ref=e559]: 138.7 KB
+                  - generic [ref=e560]:
+                    - generic [ref=e561]: "Date: 2024-08-14"
+                    - generic [ref=e562]: •
+                    - generic [ref=e563]: 1 page(s)
+                    - generic [ref=e564]: •
+                    - generic [ref=e565]: "SHA-256: e3b0c44298fc..."
+                - button "Inspect Text" [ref=e567]
+          - generic [ref=e573]:
+            - heading "Document Inspector" [level=3] [ref=e574]
+            - generic [ref=e576]: Select a document from the inventory on the left to inspect its extracted text and verified entities.
+  - contentinfo [ref=e232]:
+    - generic [ref=e237]:
+      - paragraph [ref=e238]: Legal Assistance & Non-Advocate Disclaimer
+      - paragraph [ref=e239]: Nyaya is an automated legal case preparation, factual structuring, and evidence management technology platform. Nyaya does not provide formal legal advice, legal opinions, or court representation. No advocate-client privilege or fiduciary relationship is created by using this service. The laws of India, including the Bharatiya Nyaya Sanhita (BNS 2023), Bharatiya Nagarik Suraksha Sanhita (BNSS 2023), and relevant civil procedural codes, require human advocate scrutiny for court filings. If you are experiencing immediate danger or domestic violence, call emergency helpline 112 or Women Helpline 181 immediately.
+    - generic [ref=e240]:
+      - generic [ref=e241]:
+        - generic [ref=e242]:
+          - generic [ref=e243]: न्याय Nyaya Platform
+          - paragraph [ref=e245]: Empowering citizens across India with structured legal fact-finding, evidence verification, and official legal aid resources.
+          - generic [ref=e246]: DPDP Act, 2023 Compliant
+        - generic [ref=e251]:
+          - paragraph [ref=e252]: Primary Portals
+          - list [ref=e253]:
+            - listitem [ref=e254]:
+              - link "Know Your Case Intake" [ref=e255] [cursor=pointer]:
+                - /url: "#know-your-case"
+            - listitem [ref=e256]:
+              - link "Manage Your Case Workspace" [ref=e257] [cursor=pointer]:
+                - /url: "#manage-your-case"
+            - listitem [ref=e258]:
+              - link "Indian Statutes & BNS/IPC Transition" [ref=e259] [cursor=pointer]:
+                - /url: "#law-library"
+            - listitem [ref=e260]:
+              - link "NALSA / SLSA Directory" [ref=e261] [cursor=pointer]:
+                - /url: "#legal-aid"
+        - generic [ref=e262]:
+          - paragraph [ref=e263]: Emergency & Help
+          - list [ref=e264]:
+            - listitem [ref=e265]:
+              - generic [ref=e268]:
+                - text: "NALSA Legal Aid:"
+                - strong [ref=e269]: "15100"
+            - listitem [ref=e270]:
+              - generic [ref=e273]:
+                - text: "Cyber Crime:"
+                - strong [ref=e274]: "1930"
+            - listitem [ref=e275]:
+              - generic [ref=e278]:
+                - text: "Police Emergency:"
+                - strong [ref=e279]: "112"
+            - listitem [ref=e280]:
+              - generic [ref=e283]:
+                - text: "Women in Distress:"
+                - strong [ref=e284]: "181"
+        - generic [ref=e285]:
+          - paragraph [ref=e286]: Official Indian Portals
+          - list [ref=e287]:
+            - listitem [ref=e288]:
+              - link "India Code (Govt. of India)" [ref=e289] [cursor=pointer]:
+                - /url: https://www.indiacode.nic.in
+            - listitem [ref=e295]:
+              - link "eCourts Services Portal" [ref=e296] [cursor=pointer]:
+                - /url: https://ecourts.gov.in
+            - listitem [ref=e302]:
+              - link "NALSA Official Portal" [ref=e303] [cursor=pointer]:
+                - /url: https://nalsa.gov.in
+            - listitem [ref=e309]:
+              - link "National Cyber Crime Portal" [ref=e310] [cursor=pointer]:
+                - /url: https://cybercrime.gov.in
+      - generic [ref=e316]:
+        - paragraph [ref=e317]: © 2026 Nyaya — Dedicated to accessible legal intelligence in India.
+        - generic [ref=e318]:
+          - generic [ref=e319]: Privacy Policy
+          - generic [ref=e320]: •
+          - generic [ref=e321]: Terms of Service
+          - generic [ref=e322]: •
+          - generic [ref=e323]: Security Standards

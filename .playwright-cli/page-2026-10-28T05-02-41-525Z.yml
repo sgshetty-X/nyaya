@@ -1,0 +1,184 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e8]: "National Legal Aid Helpline:"
+        - link "15100 (24x7 Toll-Free)" [ref=e9] [cursor=pointer]:
+          - /url: tel:15100
+        - generic [ref=e10]: "|"
+        - generic [ref=e11]: "Cyber Fraud:"
+        - link "1930" [ref=e12] [cursor=pointer]:
+          - /url: tel:1930
+      - generic [ref=e13]:
+        - generic [ref=e14]: Informational Legal Tech Platform (India)
+        - generic [ref=e15]: •
+        - generic [ref=e16]: DPDP Act Compliant
+    - generic [ref=e18]:
+      - button "Nyaya Home" [ref=e20]:
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - text: न्याय
+            - generic [ref=e28]: Nyaya
+          - generic [ref=e29]: Legal Case Intelligence
+      - generic [ref=e30]:
+        - button "Know Your Case" [ref=e31]
+        - button "Manage Your Case" [ref=e35]
+      - generic [ref=e39]:
+        - button "Saved Cases (4)" [ref=e40]
+        - button "Legal Aid Directory" [ref=e45]
+        - button "Statutes" [ref=e54]
+        - button "Settings and Privacy" [ref=e58]
+  - main [ref=e62]:
+    - generic [ref=e324]:
+      - generic [ref=e325]:
+        - generic [ref=e326]:
+          - generic [ref=e327]: A
+          - generic [ref=e328]:
+            - 'heading "Know Your Case: Step-by-Step Preparation" [level=2] [ref=e329]'
+            - paragraph [ref=e330]: "Case: Defective Laptop & Warranty Service Denial by E-Commerce Platform"
+        - generic [ref=e331]:
+          - button "1. Intake" [ref=e332]
+          - button "2. Legal Assessment" [ref=e333]
+          - button "3. Clarification Engine 3/3" [ref=e334]:
+            - generic [ref=e335]: 3. Clarification Engine
+            - generic [ref=e336]: 3/3
+          - button "4. 20-Section Report" [ref=e337]
+          - button "5. Legal Draft" [active] [ref=e338]
+      - generic [ref=e419]:
+        - generic [ref=e420]:
+          - generic [ref=e421]:
+            - text: Step 5 of 5
+            - heading "Legal Document Drafting Engine" [level=2] [ref=e422]
+            - paragraph [ref=e423]: Versioned structured templates formatted for Indian courts and authorities.
+          - generic [ref=e424]:
+            - combobox [ref=e425]:
+              - option "Consumer Complaint (Sec 35 CPA)" [selected]
+              - option "Legal Demand Notice (Sec 106 TPA/Contract)"
+              - option "Police Complaint / FIR (Sec 173 BNSS)"
+              - option "Civil Plaint / Suit for Recovery"
+            - button "Copy Text" [ref=e426]
+            - button "Print / Save PDF" [ref=e431]
+        - generic [ref=e437]:
+          - heading "Unresolved Items & Verification Checklist" [level=4] [ref=e438]
+          - paragraph [ref=e442]: "To maintain high formal standards, missing details are kept out of the narrative. Confirm these before filing:"
+          - list [ref=e443]:
+            - listitem [ref=e444]: Confirm whether written or electronic communications exist (WhatsApp/Email/Notice)
+        - generic [ref=e445]:
+          - generic [ref=e446]:
+            - generic [ref=e447]: BEFORE THE DISTRICT CONSUMER DISPUTES REDRESSAL COMMISSION
+            - generic [ref=e448]: AT KARNATAKA
+          - generic [ref=e449]: "IN THE MATTER OF: Arjun Venkatesh Residing at: No. 42, 5th Cross, Indiranagar, Bengaluru, Karnataka - 560038 Contact: +91 98450 12345, arjun.v@example.com ... COMPLAINANT VERSUS OmniKart India Retail Pvt. Ltd. & TechPro Electronics Having Office at: Ground Floor, Tech Park Campus, Outer Ring Road, Bengaluru - 560103 ... OPPOSITE PARTY"
+          - generic [ref=e450]: COMPLAINT UNDER SECTION 35 OF THE CONSUMER PROTECTION ACT, 2019 FOR DEFICIENCY IN SERVICE, UNFAIR TRADE PRACTICE AND COMPENSATION
+          - generic [ref=e451]:
+            - paragraph [ref=e452]: "THE COMPLAINANT / PLAINTIFF RESPECTFULLY SHEWETH AS UNDER:"
+            - generic [ref=e453]:
+              - generic [ref=e454]: "1."
+              - paragraph [ref=e455]: That the Complainant is a bonafide consumer within the meaning of Section 2(7) of the Consumer Protection Act, 2019, having purchased goods / availed services from the Opposite Party for personal, domestic use and valuable consideration.
+            - generic [ref=e456]:
+              - generic [ref=e457]: "2."
+              - paragraph [ref=e458]: That on or around 2024-08-30, the Complainant availed the services / purchased the subject matter goods from the Opposite Party, for which valuable consideration amounting to ₹84,999 was duly tendered and paid.
+            - generic [ref=e459]:
+              - generic [ref=e460]: "3."
+              - paragraph [ref=e461]: "That contrary to the assurances, express warranties, and standard representations made by the Opposite Party, the goods / services suffered from grave defect and severe deficiency in service, as detailed: Purchased a high-performance developer laptop for ₹84,999 on 14 August 2024 from an online retailer. Within two weeks, the motherboard suffered total power failure. Retailer and authorized service center refused replacement claiming physical damage without inspection report, and refused refund.."
+            - generic [ref=e462]:
+              - generic [ref=e463]: "4."
+              - paragraph [ref=e464]: That despite repeated representations, communications, and formal grievance tickets lodged by the Complainant, the Opposite Party willfully failed, neglected, and refused to rectify the defect, provide replacement, or refund the consideration paid, causing immense mental agony and financial distress to the Complainant.
+            - generic [ref=e465]:
+              - generic [ref=e466]: "5."
+              - paragraph [ref=e467]: That the cause of action arose within the territorial and pecuniary jurisdiction of this Hon'ble District Commission where the transaction took place / payment was received, and the present complaint is well within the 2-year limitation period prescribed under Section 69 of the Act.
+          - generic [ref=e468]:
+            - text: "Legal Grounds:"
+            - generic [ref=e469]:
+              - generic [ref=e470]:
+                - strong [ref=e471]: "(a) Section 2(11) CPA 2019:"
+                - text: The failure of the Opposite Party constitutes clear "deficiency in service" and supply of defective goods.
+              - generic [ref=e472]:
+                - strong [ref=e473]: "(b) Section 35 CPA 2019:"
+                - text: The Complainant is entitled to approach this Hon'ble Commission for summary adjudication and consumer redressal.
+          - generic [ref=e474]:
+            - text: "Prayer / Specific Relief:"
+            - paragraph [ref=e475]: "WHEREFORE, in the light of the facts and grounds stated hereinabove, it is most respectfully prayed that this Hon'ble Authority may graciously be pleased to:"
+            - generic [ref=e476]:
+              - generic [ref=e477]:
+                - generic [ref=e478]: (a)
+                - generic [ref=e479]: Direct the Opposite Party to immediately refund the sum of ₹84,999 along with interest at the rate of 12% per annum from the date of payment until realisation;
+              - generic [ref=e480]:
+                - generic [ref=e481]: (b)
+                - generic [ref=e482]: Direct the Opposite Party to pay a sum of ₹50,000/- as compensation for mental agony, severe harassment, and deficiency in service;
+              - generic [ref=e483]:
+                - generic [ref=e484]: (c)
+                - generic [ref=e485]: Award a sum of ₹20,000/- towards the litigation costs incurred by the Complainant;
+              - generic [ref=e486]:
+                - generic [ref=e487]: (d)
+                - generic [ref=e488]: Pass such other and further order(s) as this Hon'ble Commission may deem fit and proper in the interest of justice.
+          - generic [ref=e489]: I, Arjun Venkatesh, the Complainant above-named, do hereby verify and declare on solemn affirmation that the contents of paragraphs 1 to 5 are true and correct to the best of my personal knowledge and belief, no part of it is false, and nothing material has been concealed therefrom. Verified at [City/District] on this 28 October 2026. _______________________ COMPLAINANT
+        - generic [ref=e490]:
+          - generic [ref=e491]: Draft Version 1 • Auto-saved to case record.
+          - button "Manage Case Documents & Evidence" [ref=e492]
+  - contentinfo [ref=e232]:
+    - generic [ref=e237]:
+      - paragraph [ref=e238]: Legal Assistance & Non-Advocate Disclaimer
+      - paragraph [ref=e239]: Nyaya is an automated legal case preparation, factual structuring, and evidence management technology platform. Nyaya does not provide formal legal advice, legal opinions, or court representation. No advocate-client privilege or fiduciary relationship is created by using this service. The laws of India, including the Bharatiya Nyaya Sanhita (BNS 2023), Bharatiya Nagarik Suraksha Sanhita (BNSS 2023), and relevant civil procedural codes, require human advocate scrutiny for court filings. If you are experiencing immediate danger or domestic violence, call emergency helpline 112 or Women Helpline 181 immediately.
+    - generic [ref=e240]:
+      - generic [ref=e241]:
+        - generic [ref=e242]:
+          - generic [ref=e243]: न्याय Nyaya Platform
+          - paragraph [ref=e245]: Empowering citizens across India with structured legal fact-finding, evidence verification, and official legal aid resources.
+          - generic [ref=e246]: DPDP Act, 2023 Compliant
+        - generic [ref=e251]:
+          - paragraph [ref=e252]: Primary Portals
+          - list [ref=e253]:
+            - listitem [ref=e254]:
+              - link "Know Your Case Intake" [ref=e255] [cursor=pointer]:
+                - /url: "#know-your-case"
+            - listitem [ref=e256]:
+              - link "Manage Your Case Workspace" [ref=e257] [cursor=pointer]:
+                - /url: "#manage-your-case"
+            - listitem [ref=e258]:
+              - link "Indian Statutes & BNS/IPC Transition" [ref=e259] [cursor=pointer]:
+                - /url: "#law-library"
+            - listitem [ref=e260]:
+              - link "NALSA / SLSA Directory" [ref=e261] [cursor=pointer]:
+                - /url: "#legal-aid"
+        - generic [ref=e262]:
+          - paragraph [ref=e263]: Emergency & Help
+          - list [ref=e264]:
+            - listitem [ref=e265]:
+              - generic [ref=e268]:
+                - text: "NALSA Legal Aid:"
+                - strong [ref=e269]: "15100"
+            - listitem [ref=e270]:
+              - generic [ref=e273]:
+                - text: "Cyber Crime:"
+                - strong [ref=e274]: "1930"
+            - listitem [ref=e275]:
+              - generic [ref=e278]:
+                - text: "Police Emergency:"
+                - strong [ref=e279]: "112"
+            - listitem [ref=e280]:
+              - generic [ref=e283]:
+                - text: "Women in Distress:"
+                - strong [ref=e284]: "181"
+        - generic [ref=e285]:
+          - paragraph [ref=e286]: Official Indian Portals
+          - list [ref=e287]:
+            - listitem [ref=e288]:
+              - link "India Code (Govt. of India)" [ref=e289] [cursor=pointer]:
+                - /url: https://www.indiacode.nic.in
+            - listitem [ref=e295]:
+              - link "eCourts Services Portal" [ref=e296] [cursor=pointer]:
+                - /url: https://ecourts.gov.in
+            - listitem [ref=e302]:
+              - link "NALSA Official Portal" [ref=e303] [cursor=pointer]:
+                - /url: https://nalsa.gov.in
+            - listitem [ref=e309]:
+              - link "National Cyber Crime Portal" [ref=e310] [cursor=pointer]:
+                - /url: https://cybercrime.gov.in
+      - generic [ref=e316]:
+        - paragraph [ref=e317]: © 2026 Nyaya — Dedicated to accessible legal intelligence in India.
+        - generic [ref=e318]:
+          - generic [ref=e319]: Privacy Policy
+          - generic [ref=e320]: •
+          - generic [ref=e321]: Terms of Service
+          - generic [ref=e322]: •
+          - generic [ref=e323]: Security Standards
